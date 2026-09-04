@@ -1,0 +1,43 @@
+name: Publish carousel
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: "발행할 폴더명 (비우면 queue.txt 맨 위 항목)"
+        required: false
+        default: ""
+      dry_run:
+        description: "true 면 이미지 URL 확인까지만 하고 발행하지 않음"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 발행
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+        run: python3 scripts/publish.py "${{ github.event.inputs.folder }}"
+
+      - name: 발행 기록 커밋
+        if: success() && github.event.inputs.dry_run != 'true'
+        run: |
+          if git diff --quiet published.txt; then
+            echo "기록 변경 없음"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add published.txt
+          git commit -m "chore: 발행 기록 업데이트"
+          git push
