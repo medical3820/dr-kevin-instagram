@@ -11,6 +11,8 @@ on:
         description: "true 면 이미지 URL 확인까지만 하고 발행하지 않음"
         required: false
         default: "false"
+  schedule:
+   - cron: "0 16 * * 2,4,6"
 
 permissions:
   contents: write
