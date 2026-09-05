@@ -2,9 +2,8 @@
 # 발행이 끝난 항목은 published.txt로 자동 이동합니다.
 # 새 캐러셀을 만들면 posts/ 아래에 폴더를 넣고 이 파일 맨 아래에 폴더명을 추가하세요.
 
-C04_face_massage
 C05_filter_face
-C06_glass_skin
 C07_celebrity_reference
+C06_glass_skin
 C08_same_age_different_plan
 C09_when_not_to
