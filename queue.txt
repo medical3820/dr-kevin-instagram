@@ -11,3 +11,5 @@ C10_daily_protection
 C11_when_you_stop
 C12_skin_type_risk
 C13_your_own_photos
+C14_when_to_judge
+C15_what_you_forget
