@@ -7,3 +7,7 @@ C07_celebrity_reference
 C06_glass_skin
 C08_same_age_different_plan
 C09_when_not_to
+C10_daily_protection
+C11_when_you_stop
+C12_skin_type_risk
+C13_your_own_photos
