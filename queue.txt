@@ -13,3 +13,7 @@ C12_skin_type_risk
 C13_your_own_photos
 C14_when_to_judge
 C15_what_you_forget
+C16_your_40s
+C17_after_you_fly_home
+C18_one_question
+C19_change_or_maintain
