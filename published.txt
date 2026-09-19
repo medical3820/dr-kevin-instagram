@@ -8,3 +8,4 @@ C08_same_age_different_plan  media_id=18012619094752659  comment=ok  2026-09-12T
 C10_daily_protection  media_id=17962814799186119  comment=ok  2026-09-13T18:26:14Z
 C11_when_you_stop  media_id=17930932527399899  comment=ok  2026-09-15T19:22:22Z
 C12_skin_type_risk  media_id=18122403802901631  comment=ok  2026-09-17T19:24:31Z
+C13_your_own_photos  media_id=18025341806916141  comment=ok  2026-09-19T18:17:38Z
