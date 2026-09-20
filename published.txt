@@ -9,3 +9,4 @@ C10_daily_protection  media_id=17962814799186119  comment=ok  2026-09-13T18:26:1
 C11_when_you_stop  media_id=17930932527399899  comment=ok  2026-09-15T19:22:22Z
 C12_skin_type_risk  media_id=18122403802901631  comment=ok  2026-09-17T19:24:31Z
 C13_your_own_photos  media_id=18025341806916141  comment=ok  2026-09-19T18:17:38Z
+C14_when_to_judge  media_id=18109861541023646  comment=ok  2026-09-20T18:22:59Z
