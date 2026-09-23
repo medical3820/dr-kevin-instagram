@@ -17,3 +17,7 @@ C16_your_40s
 C17_after_you_fly_home
 C18_one_question
 C19_change_or_maintain
+C20_no_downtime
+C21_mens_skin
+C22_pregnancy
+C23_how_to_prepare
