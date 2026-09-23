@@ -17,7 +17,11 @@ C16_your_40s
 C17_after_you_fly_home
 C18_one_question
 C19_change_or_maintain
+C24_korean_words
 C20_no_downtime
 C21_mens_skin
+C25_waiting_room
 C22_pregnancy
 C23_how_to_prepare
+C26_frequency
+C27_off_season
