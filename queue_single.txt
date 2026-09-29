@@ -1,0 +1,7 @@
+# 한 장짜리(S 포맷) 발행 대기열 — 월·수 16:00 UTC (한국 화·목 새벽 1시)
+# 캐러셀 대기열(queue.txt)과 별개. 여기가 비면 해당 회차는 조용히 건너뜀.
+# 순서 근거: S03은 C24(10/1 UTC 발행) 이후로 배치해 미리 소모하지 않음.
+
+S02_half_the_sunscreen
+S01_wait_or_calendar
+S03_photograph_or_skin

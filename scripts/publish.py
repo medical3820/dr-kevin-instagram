@@ -39,7 +39,8 @@ RAW_BASE = os.environ.get("RAW_BASE", "").strip().rstrip("/")
 DRY_RUN = os.environ.get("DRY_RUN", "") == "1"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-QUEUE = os.path.join(ROOT, "queue.txt")
+# QUEUE_FILE: 캐러셀은 queue.txt, 한 장짜리는 queue_single.txt (워크플로가 지정)
+QUEUE = os.path.join(ROOT, os.environ.get("QUEUE_FILE", "queue.txt").strip() or "queue.txt")
 PUBLISHED = os.path.join(ROOT, "published.txt")
 
 
@@ -100,7 +101,11 @@ def pick_folder():
         line = line.strip()
         if line and not line.startswith("#") and line not in done:
             return line
-    die("발행 대기열이 비었습니다. queue.txt를 확인하세요.")
+    if os.environ.get("EMPTY_OK", "") == "1":
+        # 한 장짜리 대기열은 비어 있는 게 정상일 수 있다 — 실패 메일을 보내지 않고 조용히 종료
+        print("대기열(%s)이 비어 있어 이번 회차는 건너뜁니다." % os.path.basename(QUEUE))
+        sys.exit(0)
+    die("발행 대기열이 비었습니다. %s를 확인하세요." % os.path.basename(QUEUE))
 
 
 def main():
@@ -118,10 +123,11 @@ def main():
 
     post = json.load(open(post_path, encoding="utf-8"))
     slides = post["slides"]
-    if not (2 <= len(slides) <= 10):
-        die("캐러셀은 2~10장이어야 합니다. 현재 %d장." % len(slides))
+    single = len(slides) == 1
+    if not (1 <= len(slides) <= 10):
+        die("이미지는 1~10장이어야 합니다. 현재 %d장." % len(slides))
 
-    print("발행 대상: %s (%d장)" % (folder, len(slides)))
+    print("발행 대상: %s (%d장, %s)" % (folder, len(slides), "단일 이미지" if single else "캐러셀"))
 
     # --- 1. 이미지 URL 사전 확인 --------------------------------------------
     urls = []
@@ -143,25 +149,35 @@ def main():
         print("\nDRY_RUN=1 이므로 여기서 중단합니다. 이미지 URL은 모두 정상입니다.")
         return
 
-    # --- 2. 자식 컨테이너 ----------------------------------------------------
-    children = []
-    for s, url in zip(slides, urls):
-        params = {"image_url": url, "is_carousel_item": "true"}
-        alt = (s.get("alt_text") or "").strip()
+    if single:
+        # --- 2'. 단일 이미지 컨테이너 --------------------------------------------
+        params = {"image_url": urls[0], "caption": post["caption"]}
+        alt = (slides[0].get("alt_text") or "").strip()
         if alt:
             params["alt_text"] = alt
         r = _request("POST", "%s/media" % IG_USER_ID, params)
-        children.append(r["id"])
-        print("  자식 컨테이너 %s <- %s" % (r["id"], s["file"]))
+        container_id = r["id"]
+        print("  이미지 컨테이너 %s <- %s" % (container_id, slides[0]["file"]))
+    else:
+        # --- 2. 자식 컨테이너 ------------------------------------------------
+        children = []
+        for s, url in zip(slides, urls):
+            params = {"image_url": url, "is_carousel_item": "true"}
+            alt = (s.get("alt_text") or "").strip()
+            if alt:
+                params["alt_text"] = alt
+            r = _request("POST", "%s/media" % IG_USER_ID, params)
+            children.append(r["id"])
+            print("  자식 컨테이너 %s <- %s" % (r["id"], s["file"]))
 
-    # --- 3. 부모 캐러셀 ------------------------------------------------------
-    parent = _request("POST", "%s/media" % IG_USER_ID, {
-        "media_type": "CAROUSEL",
-        "children": ",".join(children),
-        "caption": post["caption"],
-    })
-    container_id = parent["id"]
-    print("  캐러셀 컨테이너 %s" % container_id)
+        # --- 3. 부모 캐러셀 --------------------------------------------------
+        parent = _request("POST", "%s/media" % IG_USER_ID, {
+            "media_type": "CAROUSEL",
+            "children": ",".join(children),
+            "caption": post["caption"],
+        })
+        container_id = parent["id"]
+        print("  캐러셀 컨테이너 %s" % container_id)
 
     # --- 4. 상태 폴링 --------------------------------------------------------
     for attempt in range(30):
