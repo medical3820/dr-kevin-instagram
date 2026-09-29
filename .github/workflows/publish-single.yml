@@ -1,0 +1,57 @@
+name: Publish single image
+
+# 한 장짜리(S 포맷) 전용. 캐러셀 대기열(queue.txt)과 완전히 분리돼 있어
+# 캐러셀 주 4회(일·화·목·토 UTC) 슬롯을 건드리지 않는다.
+# 발행 요일: 월·수 16:00 UTC = 한국 화·목 새벽 1시 = 미국 동부 정오(서머타임 기준)
+# 대기열이 비면 실패 메일 없이 조용히 건너뛴다(EMPTY_OK=1).
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        description: "발행할 폴더명 (비우면 queue_single.txt 맨 위 항목)"
+        required: false
+        default: ""
+      dry_run:
+        description: "true 면 이미지 URL 확인까지만 하고 발행하지 않음"
+        required: false
+        default: "false"
+  schedule:
+   - cron: "0 16 * * 1,3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-log
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 발행
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
+          QUEUE_FILE: queue_single.txt
+          EMPTY_OK: "1"
+        run: python3 scripts/publish.py "${{ github.event.inputs.folder }}"
+
+      - name: 발행 기록 커밋
+        if: success() && github.event.inputs.dry_run != 'true'
+        run: |
+          if git diff --quiet published.txt; then
+            echo "기록 변경 없음"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add published.txt
+          git commit -m "chore: 발행 기록 업데이트 (single)"
+          git pull --rebase
+          git push
