@@ -25,3 +25,7 @@ C22_pregnancy
 C23_how_to_prepare
 C26_frequency
 C27_off_season
+C28_dark_circles
+C29_visible_light
+C30_between_seasons
+C31_mark_or_scar
