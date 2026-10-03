@@ -17,3 +17,4 @@ C18_one_question  media_id=18120878258294803  comment=ok  2026-09-27T19:24:52Z
 C19_change_or_maintain  media_id=17952878997038194  comment=ok  2026-09-29T20:20:06Z
 S02_half_the_sunscreen  media_id=18251548594308700  comment=ok  2026-09-30T20:33:57Z
 C24_korean_words  media_id=18125151013803249  comment=ok  2026-10-01T20:40:33Z
+C20_no_downtime  media_id=17890934466613855  comment=ok  2026-10-03T18:53:44Z
