@@ -19,3 +19,4 @@ S02_half_the_sunscreen  media_id=18251548594308700  comment=ok  2026-09-30T20:33
 C24_korean_words  media_id=18125151013803249  comment=ok  2026-10-01T20:40:33Z
 C20_no_downtime  media_id=17890934466613855  comment=ok  2026-10-03T18:53:44Z
 C21_mens_skin  media_id=18024468335922194  comment=ok  2026-10-04T18:53:46Z
+S01_wait_or_calendar  media_id=18106738157524921  comment=ok  2026-10-05T22:19:55Z
