@@ -88,6 +88,43 @@ def check_url(url):
         return False, str(e), 0
 
 
+# --- 발행 요일 게이트 (2026-10-05) -----------------------------------------
+# 캐러셀을 주 4회 → 주 2회로 줄였다. 워크플로 파일(.github/workflows/publish.yml)은
+# 원격 도구로 수정할 수 없어 크론(일·화·목·토 16:00 UTC)은 그대로 두고, 여기서
+# 예약 실행 중 화·토(UTC)만 발행한다 = 한국 수·일 새벽.
+#  · 수동 실행(workflow_dispatch)과 한 장짜리 대기열(queue_single.txt)에는 적용하지 않는다.
+#  · 나중에 publish.yml 크론을 직접 바꾸면 OLD_CRON과 달라지므로 이 게이트는 저절로 꺼진다.
+OLD_CRON = "0 16 * * 0,2,4,6"
+CAROUSEL_DAYS_UTC = {1, 5}   # 월=0, 화=1, … 토=5
+
+
+def schedule_gate():
+    if os.environ.get("GITHUB_EVENT_NAME", "") != "schedule":
+        return
+    if os.path.basename(QUEUE) != "queue.txt":
+        return
+    cron = ""
+    ev = os.environ.get("GITHUB_EVENT_PATH", "")
+    if ev and os.path.exists(ev):
+        try:
+            cron = (json.load(open(ev, encoding="utf-8")).get("schedule") or "").strip()
+        except Exception:
+            cron = ""
+    if cron and cron != OLD_CRON:
+        return
+    # 예약 실행이 몇 시간 밀려도 요일 판단이 바뀌지 않도록 6시간 당겨서 본다
+    wd = time.gmtime(time.time() - 6 * 3600).tm_wday
+    if wd in CAROUSEL_DAYS_UTC:
+        return
+    msg = "주 2회 운영(화·토 UTC) — 오늘(%s요일 UTC)은 캐러셀을 발행하지 않고 건너뜁니다." % "월화수목금토일"[wd]
+    print(msg)
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as f:
+            f.write("### 건너뜀\n\n%s\n" % msg)
+    sys.exit(0)
+
+
 def pick_folder():
     if len(sys.argv) > 1 and sys.argv[1].strip():
         return sys.argv[1].strip()
@@ -116,6 +153,7 @@ def main():
     if not RAW_BASE:
         die("RAW_BASE 가 비어 있습니다.")
 
+    schedule_gate()
     folder = pick_folder()
     post_path = os.path.join(ROOT, "posts", folder, "post.json")
     if not os.path.exists(post_path):
