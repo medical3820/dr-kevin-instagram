@@ -85,9 +85,11 @@ GitHub Desktop → `File → Add local repository` → 이 폴더 선택 →
 
 ---
 
-## 3-1. 릴스 발행 (수동 버튼)
+## 3-1. 릴스 발행 (편별 예약)
 
-예약 실행은 없습니다. `Actions → Publish reel → Run workflow` 를 누를 때마다 `queue_reels.txt` 위에서부터 1편씩 발행합니다.
+`Publish reel` 워크플로가 30분마다(매시 17분·47분) `queue_reels.txt` 를 확인해서,
+`post.json` 의 `publish_at` 시각이 지난 항목을 1편 발행합니다. GitHub 예약 실행은 몇십 분 늦어질 수 있습니다.
+`publish_at` 이 없는 항목은 자동 발행되지 않습니다. 바로 올리려면 `Actions → Publish reel → Run workflow`.
 처음 한 번은 `dry_run: true` 로 돌려 영상·커버가 `OK` 인지 확인하세요.
 
 새 릴스 추가:
@@ -105,7 +107,8 @@ GitHub Desktop → `File → Add local repository` → 이 폴더 선택 →
   "first_comment": "발행 직후 자동으로 달릴 첫 댓글",
   "video": "video.mp4",
   "cover": "cover.jpg",
-  "share_to_feed": true
+  "share_to_feed": true,
+  "publish_at": "2026-10-10T22:00+09:00"
 }
 ```
 

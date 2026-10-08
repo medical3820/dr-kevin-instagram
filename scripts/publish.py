@@ -217,9 +217,32 @@ def reel_container(folder, post):
     return cid
 
 
+def due(folder):
+    """RESPECT_PUBLISH_AT=1(릴스 예약 실행)일 때: post.json 의 publish_at 이 지났는지.
+    publish_at 이 없으면 예약 대상이 아니므로 False."""
+    import datetime
+    try:
+        post = json.load(open(os.path.join(ROOT, "posts", folder, "post.json"), encoding="utf-8"))
+    except Exception:
+        return False
+    at = (post.get("publish_at") or "").strip()
+    if not at:
+        return False
+    try:
+        when = datetime.datetime.fromisoformat(at)
+    except ValueError:
+        die("%s publish_at 형식 오류: %s (예: 2026-10-10T22:00+09:00)" % (folder, at))
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=datetime.timezone(datetime.timedelta(hours=9)))  # 시간대 없으면 KST
+    now = datetime.datetime.now(datetime.timezone.utc)
+    print("  %s publish_at=%s → %s" % (folder, at, "발행 시각 지남" if when <= now else "대기"))
+    return when <= now
+
+
 def pick_folder():
     if len(sys.argv) > 1 and sys.argv[1].strip():
         return sys.argv[1].strip()
+    respect_at = os.environ.get("RESPECT_PUBLISH_AT", "") == "1"
     done = set()
     if os.path.exists(PUBLISHED):
         for line in open(PUBLISHED, encoding="utf-8"):
@@ -229,10 +252,12 @@ def pick_folder():
     for line in open(QUEUE, encoding="utf-8"):
         line = line.strip()
         if line and not line.startswith("#") and line not in done:
+            if respect_at and not due(line):
+                continue
             return line
     if os.environ.get("EMPTY_OK", "") == "1":
         # 한 장짜리 대기열은 비어 있는 게 정상일 수 있다 — 실패 메일을 보내지 않고 조용히 종료
-        print("대기열(%s)이 비어 있어 이번 회차는 건너뜁니다." % os.path.basename(QUEUE))
+        print("대기열(%s)에 지금 발행할 항목이 없어 이번 회차는 건너뜁니다." % os.path.basename(QUEUE))
         sys.exit(0)
     die("발행 대기열이 비었습니다. %s를 확인하세요." % os.path.basename(QUEUE))
 

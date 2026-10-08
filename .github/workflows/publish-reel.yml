@@ -1,6 +1,9 @@
 name: Publish reel
 
-# 릴스 전용. 예약 실행 없음 — 버튼을 누를 때만 발행한다.
+# 릴스 전용.
+# 예약: 30분마다 queue_reels.txt 를 보고, post.json 의 publish_at 이 지난 항목을 1편 발행한다.
+#       publish_at 이 없는 항목은 예약 실행으로는 절대 발행되지 않는다(버튼으로만).
+# 수동: Run workflow — folder 를 비우면 publish_at 과 무관하게 대기열 맨 위 항목.
 # 캐러셀(queue.txt)·한 장짜리(queue_single.txt)와 대기열이 분리돼 있다.
 
 on:
@@ -14,6 +17,8 @@ on:
         description: "true 면 영상·커버 URL 확인까지만 하고 발행하지 않음"
         required: false
         default: "false"
+  schedule:
+    - cron: "17,47 * * * *"
 
 permissions:
   contents: write
@@ -36,6 +41,8 @@ jobs:
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
           DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
           QUEUE_FILE: queue_reels.txt
+          RESPECT_PUBLISH_AT: ${{ github.event_name == 'schedule' && '1' || '' }}
+          EMPTY_OK: ${{ github.event_name == 'schedule' && '1' || '' }}
         run: python3 scripts/publish.py "${{ github.event.inputs.folder }}"
 
       - name: 발행 기록 커밋
