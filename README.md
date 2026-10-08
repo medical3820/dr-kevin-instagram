@@ -85,6 +85,36 @@ GitHub Desktop → `File → Add local repository` → 이 폴더 선택 →
 
 ---
 
+## 3-1. 릴스 발행 (수동 버튼)
+
+예약 실행은 없습니다. `Actions → Publish reel → Run workflow` 를 누를 때마다 `queue_reels.txt` 위에서부터 1편씩 발행합니다.
+처음 한 번은 `dry_run: true` 로 돌려 영상·커버가 `OK` 인지 확인하세요.
+
+새 릴스 추가:
+
+1. `posts/<폴더>/` 에 `video.mp4`, `cover.jpg`, `post.json` 을 넣는다
+   - 영상: MP4(H.264 + AAC), 9:16 1080×1920, 3초~15분, 300MB 이하
+   - 커버: JPEG (PNG면 변환해서 넣기)
+2. `queue_reels.txt` 맨 아래에 폴더명 추가 → push
+
+```json
+{
+  "id": "CR05",
+  "format": "R",
+  "caption": "캡션 + 해시태그",
+  "first_comment": "발행 직후 자동으로 달릴 첫 댓글",
+  "video": "video.mp4",
+  "cover": "cover.jpg",
+  "share_to_feed": true
+}
+```
+
+- 인스타가 영상 URL을 못 가져가면 스크립트가 파일을 직접 업로드하는 방식으로 한 번 더 시도합니다.
+- API로 발행한 릴스는 Trial Reels가 아닌 일반 발행입니다. AI 라벨도 붙이지 않습니다.
+- 인스타 자동자막은 API로 끌 수 없습니다. 필요하면 발행 후 앱에서 끄세요.
+
+---
+
 ## 4. 토큰 관리
 
 `Actions → Token check` 가 매주 월요일 아침에 토큰 남은 기간을 확인합니다.

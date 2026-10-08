@@ -13,6 +13,11 @@ Instagram 캐러셀 발행 스크립트 (Instagram API with Instagram Login)
   7) 첫 댓글 작성
   8) queue.txt -> published.txt 이동
 
+릴스(post.json 에 "video" 가 있으면):
+  영상·커버 URL 확인 -> REELS 컨테이너(video_url) -> 폴링(최대 10분)
+  -> 인스타가 영상을 못 가져가 ERROR 가 나면 같은 파일을 직접 업로드(resumable)로 한 번 더
+  -> 이후 발행·첫 댓글·기록은 캐러셀과 동일
+
 필요 환경변수:
   IG_USER_ID        Instagram 사용자 ID (비밀 아님)
   IG_ACCESS_TOKEN   액세스 토큰 (비밀)
@@ -125,6 +130,93 @@ def schedule_gate():
     sys.exit(0)
 
 
+def wait_finished(container_id, attempts=30, interval=5, fatal=True):
+    """컨테이너가 FINISHED 될 때까지 폴링. fatal=False 면 실패 시 die 대신 상태 문자열을 돌려준다."""
+    for _ in range(attempts):
+        st = _request("GET", container_id, {"fields": "status_code,status"})
+        code = st.get("status_code")
+        print("  상태: %s" % code)
+        if code == "FINISHED":
+            return None
+        if code == "ERROR":
+            if fatal:
+                die("컨테이너 처리 실패: %s" % st.get("status"))
+            return "ERROR: %s" % st.get("status")
+        time.sleep(interval)
+    msg = "컨테이너가 FINISHED 되지 않았습니다 (%d초 초과)." % (attempts * interval)
+    if fatal:
+        die(msg)
+    return msg
+
+
+def reel_container(folder, post):
+    """릴스 컨테이너를 만들고 FINISHED 까지 기다린 뒤 id 를 돌려준다."""
+    video_path = os.path.join(ROOT, "posts", folder, post["video"])
+    if not os.path.exists(video_path):
+        die("영상 파일이 없습니다: %s" % video_path)
+    video_url = "%s/posts/%s/%s" % (RAW_BASE, folder, post["video"])
+    cover = (post.get("cover") or "").strip()
+    cover_url = "%s/posts/%s/%s" % (RAW_BASE, folder, cover) if cover else ""
+
+    # --- 1. URL 사전 확인 ----------------------------------------------------
+    problems = []
+    for name, url, limit in ((post["video"], video_url, 300), (cover, cover_url, 8)):
+        if not url:
+            continue
+        ok, info, length = check_url(url)
+        mb = length / 1024.0 / 1024.0
+        print("  %-10s %s  (%s, %.2fMB)" % (name, "OK " if ok else "FAIL", info, mb))
+        if not ok:
+            problems.append("%s 열리지 않음: %s" % (name, info))
+        elif mb > limit:
+            problems.append("%s %dMB 초과 (%.2fMB)" % (name, limit, mb))
+    if problems:
+        die("릴스 사전 확인 실패:\n  - " + "\n  - ".join(problems))
+
+    if DRY_RUN:
+        print("\nDRY_RUN=1 이므로 여기서 중단합니다. 영상·커버 URL은 모두 정상입니다.")
+        sys.exit(0)
+
+    base = {
+        "media_type": "REELS",
+        "caption": post["caption"],
+        "share_to_feed": "true" if post.get("share_to_feed", True) else "false",
+    }
+    if cover_url:
+        base["cover_url"] = cover_url
+    elif post.get("thumb_offset") is not None:
+        base["thumb_offset"] = str(int(post["thumb_offset"]))
+
+    # --- 2. video_url 로 컨테이너 --------------------------------------------
+    params = dict(base, video_url=video_url)
+    cid = _request("POST", "%s/media" % IG_USER_ID, params)["id"]
+    print("  릴스 컨테이너 %s <- video_url" % cid)
+    err = wait_finished(cid, attempts=60, interval=10, fatal=False)
+    if err is None:
+        return cid
+    print("  video_url 방식 실패 (%s) — 파일 직접 업로드로 재시도합니다." % err)
+
+    # --- 3. 직접 업로드 (resumable) ------------------------------------------
+    r = _request("POST", "%s/media" % IG_USER_ID, dict(base, upload_type="resumable"))
+    cid = r["id"]
+    uri = r.get("uri") or "https://rupload.facebook.com/ig-api-upload/%s/%s" % (DEFAULT_VERSION, cid)
+    data = open(video_path, "rb").read()
+    req = urllib.request.Request(uri, data=data, method="POST", headers={
+        "Authorization": "OAuth " + TOKEN,
+        "offset": "0",
+        "file_size": str(len(data)),
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            print("  업로드 응답: %s" % resp.read().decode("utf-8", "replace")[:200])
+    except urllib.error.HTTPError as e:
+        raw = e.read().decode("utf-8", "replace").replace(TOKEN, "***TOKEN***")
+        die("영상 직접 업로드 실패 -> HTTP %s\n%s" % (e.code, raw))
+    print("  릴스 컨테이너 %s <- 직접 업로드 (%.2fMB)" % (cid, len(data) / 1024.0 / 1024.0))
+    wait_finished(cid, attempts=60, interval=10)
+    return cid
+
+
 def pick_folder():
     if len(sys.argv) > 1 and sys.argv[1].strip():
         return sys.argv[1].strip()
@@ -145,21 +237,8 @@ def pick_folder():
     die("발행 대기열이 비었습니다. %s를 확인하세요." % os.path.basename(QUEUE))
 
 
-def main():
-    if not IG_USER_ID:
-        die("IG_USER_ID 가 비어 있습니다.")
-    if not TOKEN:
-        die("IG_ACCESS_TOKEN 이 비어 있습니다.")
-    if not RAW_BASE:
-        die("RAW_BASE 가 비어 있습니다.")
-
-    schedule_gate()
-    folder = pick_folder()
-    post_path = os.path.join(ROOT, "posts", folder, "post.json")
-    if not os.path.exists(post_path):
-        die("post.json 을 찾을 수 없습니다: %s" % post_path)
-
-    post = json.load(open(post_path, encoding="utf-8"))
+def image_container(folder, post):
+    """캐러셀/단일 이미지 컨테이너를 만들고 FINISHED 까지 기다린 뒤 id 를 돌려준다. DRY_RUN 이면 None."""
     slides = post["slides"]
     single = len(slides) == 1
     if not (1 <= len(slides) <= 10):
@@ -218,17 +297,34 @@ def main():
         print("  캐러셀 컨테이너 %s" % container_id)
 
     # --- 4. 상태 폴링 --------------------------------------------------------
-    for attempt in range(30):
-        st = _request("GET", container_id, {"fields": "status_code,status"})
-        code = st.get("status_code")
-        print("  상태: %s" % code)
-        if code == "FINISHED":
-            break
-        if code == "ERROR":
-            die("컨테이너 처리 실패: %s" % st.get("status"))
-        time.sleep(5)
+    wait_finished(container_id)
+    return container_id
+
+
+def main():
+    if not IG_USER_ID:
+        die("IG_USER_ID 가 비어 있습니다.")
+    if not TOKEN:
+        die("IG_ACCESS_TOKEN 이 비어 있습니다.")
+    if not RAW_BASE:
+        die("RAW_BASE 가 비어 있습니다.")
+
+    schedule_gate()
+    folder = pick_folder()
+    post_path = os.path.join(ROOT, "posts", folder, "post.json")
+    if not os.path.exists(post_path):
+        die("post.json 을 찾을 수 없습니다: %s" % post_path)
+
+    post = json.load(open(post_path, encoding="utf-8"))
+    if post.get("video"):
+        print("발행 대상: %s (릴스)" % folder)
+        container_id = reel_container(folder, post)
+        kind = "릴스"
     else:
-        die("컨테이너가 FINISHED 되지 않았습니다 (2분 초과).")
+        container_id = image_container(folder, post)
+        if container_id is None:
+            return
+        kind = "이미지 %d장" % len(post["slides"])
 
     # --- 5. 발행 ------------------------------------------------------------
     pub = _request("POST", "%s/media_publish" % IG_USER_ID, {"creation_id": container_id})
