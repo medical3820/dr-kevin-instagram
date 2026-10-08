@@ -1,9 +1,9 @@
 # 릴스 발행 대기열 — post.json 에 publish_at(예: "2026-10-10T22:00+09:00")이 있는 항목만 그 시각 이후 자동 발행(30분 간격 확인).
 # publish_at 이 없으면 대기만 한다. 수동 발행은 Actions → Publish reel → Run workflow.
-# CR04_gua_sha 는 2026-10-08 앱에서 직접 발행 → 대기열에서 제외.
+# CR04_gua_sha·CR02_scar_or_mark 는 앱에서 직접 발행 → 대기열에서 제외.
 # 발행이 끝난 항목은 published.txt 에 자동 기록되고 다음 실행 때 건너뜁니다.
 # 새 릴스: posts/<폴더>/ 에 video.mp4 · cover.jpg · post.json 을 넣고 이 파일 맨 아래에 폴더명 추가.
 # 간격 메모: CR01은 캐러셀 C28과 3일 이상, CR02는 C31과 3일 이상 띄울 것.
 
 CR01_dark_circles
-CR02_scar_or_mark
+CR03_visible_light
