@@ -326,6 +326,26 @@ def image_container(folder, post):
     return container_id
 
 
+def record(folder, media_id, comment_state):
+    with open(PUBLISHED, "a", encoding="utf-8") as f:
+        f.write("%s  media_id=%s  comment=%s  %s\n" % (
+            folder, media_id, comment_state, time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())))
+
+
+def find_on_instagram(caption):
+    """최근 게시물 중 캡션이 같은 것의 media_id. 조회 실패 시 None (발행을 막지는 않음)."""
+    try:
+        r = _request("GET", "%s/media" % IG_USER_ID, {"fields": "id,caption,timestamp", "limit": "30"})
+    except BaseException:
+        print("경고: 최근 게시물 조회 실패 — 중복 확인을 건너뜁니다.")
+        return None
+    want = (caption or "").strip()
+    for m in r.get("data", []):
+        if (m.get("caption") or "").strip() == want:
+            return m["id"]
+    return None
+
+
 def main():
     if not IG_USER_ID:
         die("IG_USER_ID 가 비어 있습니다.")
@@ -352,9 +372,25 @@ def main():
         kind = "이미지 %d장" % len(post["slides"])
 
     # --- 5. 발행 ------------------------------------------------------------
-    pub = _request("POST", "%s/media_publish" % IG_USER_ID, {"creation_id": container_id})
-    media_id = pub["id"]
+    # 같은 캡션이 이미 계정에 있으면 발행하지 않는다 (기록 누락으로 인한 중복 발행 방지)
+    dup = find_on_instagram(post["caption"])
+    if dup:
+        record(folder, dup, "skip-duplicate")
+        print("같은 캡션의 게시물이 이미 있습니다 (media_id=%s). 발행하지 않고 기록만 남깁니다." % dup)
+        return
+    try:
+        pub = _request("POST", "%s/media_publish" % IG_USER_ID, {"creation_id": container_id})
+        media_id = pub["id"]
+    except BaseException as e:
+        # 오류 응답이어도 실제로는 올라갔을 수 있다 — 확인 후 기록. 어느 쪽이든 자동 재시도는 막는다.
+        time.sleep(20)
+        media_id = find_on_instagram(post["caption"])
+        record(folder, media_id or "unknown", "publish-error-check-app")
+        print("media_publish 오류: %r — 계정 확인 결과 %s. 자동 재시도하지 않도록 기록했습니다." % (
+            e, "발행됨 (media_id=%s)" % media_id if media_id else "발행 안 됨(앱에서 확인 필요)"))
+        sys.exit(1)
     print("발행 완료. media_id=%s" % media_id)
+    record(folder, media_id, "pending")
 
     # --- 6. 첫 댓글 ---------------------------------------------------------
     comment = (post.get("first_comment") or "").strip()
@@ -364,21 +400,23 @@ def main():
             c = _request("POST", "%s/comments" % media_id, {"message": comment})
             print("첫 댓글 완료. comment_id=%s" % c.get("id"))
             comment_ok = True
-        except SystemExit:
+        except BaseException:
             print("경고: 첫 댓글 실패. 게시물은 정상 발행되었습니다. 앱에서 직접 달아주세요.")
 
-    # --- 7. 기록 ------------------------------------------------------------
-    with open(PUBLISHED, "a", encoding="utf-8") as f:
-        f.write("%s  media_id=%s  comment=%s  %s\n" % (
-            folder, media_id, "ok" if comment_ok else "manual",
-            time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())))
+    # --- 7. 기록 (발행 직후 남긴 줄의 comment 상태를 확정) ------------------------
+    lines = open(PUBLISHED, encoding="utf-8").read().split("\n")
+    for i in range(len(lines) - 1, -1, -1):
+        if lines[i].startswith(folder + "  ") and "comment=pending" in lines[i]:
+            lines[i] = lines[i].replace("comment=pending", "comment=" + ("ok" if comment_ok else "manual"))
+            break
+    open(PUBLISHED, "w", encoding="utf-8").write("\n".join(lines))
 
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
         with open(summary, "a", encoding="utf-8") as f:
             f.write("### 발행 완료: %s\n\n" % folder)
             f.write("- media_id: `%s`\n" % media_id)
-            f.write("- 슬라이드: %d장\n" % len(slides))
+            f.write("- 형식: %s\n" % kind)
             f.write("- 첫 댓글: %s\n" % ("자동 등록됨" if comment_ok else "실패 — 수동 등록 필요"))
             f.write("\n**대체텍스트가 실제로 반영됐는지 인스타그램 앱에서 한 번 확인하세요.** "
                     "(게시물 … → 수정 → 각 사진의 대체 텍스트)\n")

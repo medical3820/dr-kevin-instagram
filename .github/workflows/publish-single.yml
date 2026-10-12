@@ -43,7 +43,7 @@ jobs:
         run: python3 scripts/publish.py "${{ github.event.inputs.folder }}"
 
       - name: 발행 기록 커밋
-        if: success() && github.event.inputs.dry_run != 'true'
+        if: always() && github.event.inputs.dry_run != 'true'
         run: |
           if git diff --quiet published.txt; then
             echo "기록 변경 없음"
