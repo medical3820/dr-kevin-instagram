@@ -49,10 +49,15 @@ expires_in = int(data.get("expires_in", 0))
 days = expires_in / 86400.0
 print("토큰 남은 기간: %.1f일 (%d초)" % (days, expires_in))
 
+new_token = (data.get("access_token") or "").strip()
+rotated = bool(new_token) and new_token != TOKEN
+print("갱신 결과: %s" % ("새 토큰 발급 → Secret 교체 필요" if rotated else "기존 토큰 그대로 연장"))
+
 summary = os.environ.get("GITHUB_STEP_SUMMARY")
 if summary:
     with open(summary, "a", encoding="utf-8") as f:
         f.write("### 토큰 상태\n\n- 남은 기간: **%.1f일**\n" % days)
+        f.write("- 갱신 결과: **%s**\n" % ("Secret 교체 필요" if rotated else "자동 연장"))
 
 if WANT_PRINT:
     print(data.get("access_token", ""))
@@ -62,3 +67,11 @@ if days < 14:
     print("\n경고: 남은 기간이 14일 미만입니다. 토큰을 갱신해 GitHub Secret을 교체하세요.",
           file=sys.stderr)
     sys.exit(3)
+
+# 갱신이 기존과 다른 토큰을 돌려줬다면, 저장된 Secret 의 만료일은 연장되지 않는다.
+# 이 경우 "남은 기간 60일" 은 새 토큰 이야기일 뿐이므로 실패로 끝내 알림을 보낸다.
+if rotated:
+    print("\n경고: 갱신 결과가 기존 토큰과 다릅니다. 저장된 IG_ACCESS_TOKEN 의 만료일은 "
+          "연장되지 않았습니다. 로컬에서 token_status.py --print 로 새 토큰을 받아 "
+          "Secret 을 교체하세요.", file=sys.stderr)
+    sys.exit(4)
