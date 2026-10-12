@@ -17,6 +17,9 @@ on:
         description: "true 면 영상·커버 URL 확인까지만 하고 발행하지 않음"
         required: false
         default: "false"
+  schedule:
+    # GitHub 예약 실행은 실제로 1~4시간씩 밀리기도 한다 — 정시 발행이 아니라 "그날 안에" 발행으로 볼 것
+    - cron: "17,47 * * * *"
 
 permissions:
   contents: write
