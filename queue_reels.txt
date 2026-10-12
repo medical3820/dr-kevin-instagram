@@ -6,4 +6,4 @@
 # 간격 메모: CR01은 캐러셀 C28과 3일 이상, CR02는 C31과 3일 이상 띄울 것.
 
 CR01_dark_circles
-CR03_visible_light
+# CR03_visible_light — 2026-10-10~11 중복 발행 사고로 대기열에서 제거

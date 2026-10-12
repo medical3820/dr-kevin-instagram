@@ -17,8 +17,6 @@ on:
         description: "true 면 영상·커버 URL 확인까지만 하고 발행하지 않음"
         required: false
         default: "false"
-  schedule:
-    - cron: "17,47 * * * *"
 
 permissions:
   contents: write
