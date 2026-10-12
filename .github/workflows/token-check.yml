@@ -1,5 +1,10 @@
 name: Token check
 
+# 매주 월요일 토큰을 갱신한다.
+# 갱신 결과가 새 토큰이면:
+#   - Secret GH_PAT_SECRETS 가 있으면 → IG_ACCESS_TOKEN 을 새 토큰으로 자동 교체
+#   - 없으면 → 실패로 끝나 알림 메일 (수동 교체 필요)
+
 on:
   workflow_dispatch:
   schedule:
@@ -10,7 +15,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: 토큰 상태 확인
+        id: check
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          NEW_TOKEN_FILE: ${{ secrets.GH_PAT_SECRETS != '' && format('{0}/new_token', runner.temp) || '' }}
         run: python3 scripts/token_status.py
+
+      - name: 새 토큰을 Secret 에 저장
+        if: steps.check.outputs.rotated == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_SECRETS }}
+        run: |
+          gh secret set IG_ACCESS_TOKEN --repo "${{ github.repository }}" < "$RUNNER_TEMP/new_token"
+          rm -f "$RUNNER_TEMP/new_token"
+          echo "- IG_ACCESS_TOKEN: **새 토큰으로 자동 교체 완료**" >> "$GITHUB_STEP_SUMMARY"

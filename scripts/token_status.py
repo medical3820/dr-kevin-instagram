@@ -69,7 +69,20 @@ if days < 14:
     sys.exit(3)
 
 # 갱신이 기존과 다른 토큰을 돌려줬다면, 저장된 Secret 의 만료일은 연장되지 않는다.
-# 이 경우 "남은 기간 60일" 은 새 토큰 이야기일 뿐이므로 실패로 끝내 알림을 보낸다.
+# NEW_TOKEN_FILE 이 주어지면(워크플로에 GH_PAT_SECRETS 가 등록된 경우) 새 토큰을 파일로 넘기고
+# 다음 단계가 Secret 을 교체한다. 토큰 값은 로그에 절대 찍지 않는다.
+new_token_file = os.environ.get("NEW_TOKEN_FILE", "").strip()
+if rotated and new_token_file:
+    with open(new_token_file, "w", encoding="utf-8") as f:
+        f.write(new_token)
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a", encoding="utf-8") as f:
+            f.write("rotated=1\n")
+    print("새 토큰을 다음 단계(Secret 자동 교체)로 넘깁니다.")
+    sys.exit(0)
+
+# 자동 교체 설정이 없으면 실패로 끝내 알림을 보낸다.
 if rotated:
     print("\n경고: 갱신 결과가 기존 토큰과 다릅니다. 저장된 IG_ACCESS_TOKEN 의 만료일은 "
           "연장되지 않았습니다. 로컬에서 token_status.py --print 로 새 토큰을 받아 "
