@@ -53,7 +53,7 @@ GitHub Desktop → `File → Add local repository` → 이 폴더 선택 →
 ### 예약 발행
 
 `.github/workflows/publish.yml` 안의 `schedule:` 블록 주석을 풀면 자동 발행이 시작됩니다.
-기본값은 화·목·토 17:00 UTC (미국 동부 오후 1시 / 한국 새벽 2시).
+현재: 캐러셀 화·토, 한 장짜리 월·수, 모두 13:23 UTC 예약. GitHub 예약은 2~5시간 늦게 돌아서 실제 게시는 미 동부 오전 11시~오후 3시(영미권 활동 피크). 릴스는 publish_at 기본 미 동부 10:00.
 
 **테스트 발행이 성공한 뒤에 켜세요.**
 

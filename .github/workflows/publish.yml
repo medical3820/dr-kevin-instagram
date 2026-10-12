@@ -12,7 +12,10 @@ on:
         required: false
         default: "false"
   schedule:
-   - cron: "0 16 * * 0,2,4,6"
+   # 2026-10-12 영미권 활동 시간대로 이동: 화·토 13:23 UTC 예약.
+   # GitHub 예약은 실제로 2~5시간 늦게 돈다 → 실제 게시 ≈ 미 동부 11시~오후 3시 / 서부 8시~정오 / 영국 오후.
+   # 요일은 크론에서 직접 고른다(publish.py 요일 게이트는 OLD_CRON과 달라서 자동으로 꺼짐).
+   - cron: "23 13 * * 2,6"
 
 permissions:
   contents: write
