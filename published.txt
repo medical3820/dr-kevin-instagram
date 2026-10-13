@@ -25,3 +25,4 @@ S03_photograph_or_skin  media_id=17882400243652470  comment=ok  2026-10-07T21:01
 C22_pregnancy  media_id=unknown  comment=check-app  2026-10-10T19:37:47Z  (기록 누락 복구: 스크립트 버그로 발행 후 기록 실패 추정)
 CR03_visible_light  media_id=unknown  comment=check-app  2026-10-10T15:22:20Z  (기록 누락 복구: 같은 버그로 중복 발행됨)
 S04_newest_sunscreen_filter  media_id=18031296368854911  comment=ok  2026-10-12T21:46:32Z
+C23_how_to_prepare  media_id=18133477630598463  comment=ok  2026-10-13T19:54:40Z
