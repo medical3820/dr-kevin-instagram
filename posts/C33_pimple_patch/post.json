@@ -1,0 +1,32 @@
+{
+  "id": "C33",
+  "format": "D",
+  "caption": "what does a pimple patch actually do?\nIt absorbs fluid at the surface, covers the spot and blocks some light. It does not reach below.\n\nMost pimple patches are hydrocolloid, the same material used on wounds. As it takes up fluid it turns into a soft white gel. That is why a patch works best on a spot that has come to a head, or one that has already opened. A deep, closed bump under the skin has no fluid at the surface to give. That part is reasoning from how the material works, not a head-to-head trial.\n\nIt has two other jobs. It covers the spot, which keeps fingers off it - and picking makes lasting marks more likely. And it shades it: in a small trial, a hydrocolloid acne dressing let through 7.4% of UVB, against 38% for plain skin tape. Sun on a healing spot can darken the mark it leaves.\n\nThe same trial - 20 people with mild-to-moderate acne, one week - found more improvement in redness and inflammation with the dressing than with tape.\n\nWhat this does not mean: 20 people for 7 days is a pilot, and a 2025 review calls the acne evidence early. Deep bumps that keep returning in one place are worth showing a doctor - those are the ones more likely to scar.\n\nChao CM et al. J Cosmet Sci 2006;57(2):95-105\nNguyen N et al. J Clin Med 2025;14(4):1345. doi:10.3390/jcm14041345\n\nGeneral education only.\n\n#PimplePatches #HydrocolloidPatch #AcneMarks #Pimples #SkincareScience",
+  "first_comment": "That white centre is fluid the patch has taken up. Ever put one on a deep bump and found nothing there the next morning?",
+  "slides": [
+    {
+      "file": "01.jpg",
+      "alt_text": "Slide 1 of 6: A clear patch turned white after absorbing a drop of water. What a pimple patch can actually pull."
+    },
+    {
+      "file": "02.jpg",
+      "alt_text": "Slide 2 of 6: A patch absorbs, covers and shades. None of these reach below the surface."
+    },
+    {
+      "file": "03.jpg",
+      "alt_text": "Slide 3 of 6: 7.4% of UVB passed through a hydrocolloid acne dressing, against 38% through skin tape."
+    },
+    {
+      "file": "04.jpg",
+      "alt_text": "Slide 4 of 6: Patches help most on a spot with a head, an opened spot, or one you keep touching."
+    },
+    {
+      "file": "05.jpg",
+      "alt_text": "Slide 5 of 6: Deep closed bumps, whole-face breakouts and spots that keep returning get little from a patch."
+    },
+    {
+      "file": "06.jpg",
+      "alt_text": "Slide 6 of 6: Use a patch for the surface, expect less picking, skip it for deep bumps."
+    }
+  ]
+}

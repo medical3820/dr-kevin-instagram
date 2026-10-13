@@ -29,3 +29,6 @@ C28_dark_circles
 C29_visible_light
 C30_between_seasons
 C31_mark_or_scar
+C32_purge_or_breakout
+C33_pimple_patch
+C34_hypochlorous_mist
