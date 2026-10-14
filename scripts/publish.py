@@ -187,9 +187,23 @@ def reel_container(folder, post):
     elif post.get("thumb_offset") is not None:
         base["thumb_offset"] = str(int(post["thumb_offset"]))
 
+    if post.get("is_ai_generated"):
+        base["is_ai_generated"] = "true"
+
     # --- 2. video_url 로 컨테이너 --------------------------------------------
-    params = dict(base, video_url=video_url)
-    cid = _request("POST", "%s/media" % IG_USER_ID, params)["id"]
+    try:
+        cid = _request("POST", "%s/media" % IG_USER_ID, dict(base, video_url=video_url))["id"]
+    except SystemExit:
+        if "is_ai_generated" not in base:
+            raise
+        # AI 라벨 파라미터를 거부하면 라벨 없이 한 번 더 — 발행 뒤 앱에서 직접 붙이도록 요약에 남긴다
+        del base["is_ai_generated"]
+        print("경고: is_ai_generated 거부됨 — 라벨 없이 진행합니다. 발행 후 앱에서 AI 라벨을 붙이세요.")
+        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary:
+            with open(summary, "a", encoding="utf-8") as f:
+                f.write("- **AI 라벨 자동 설정 실패 → 앱에서 직접 붙이세요**\n")
+        cid = _request("POST", "%s/media" % IG_USER_ID, dict(base, video_url=video_url))["id"]
     print("  릴스 컨테이너 %s <- video_url" % cid)
     err = wait_finished(cid, attempts=60, interval=10, fatal=False)
     if err is None:
