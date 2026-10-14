@@ -27,3 +27,4 @@ CR03_visible_light  media_id=unknown  comment=check-app  2026-10-10T15:22:20Z  (
 S04_newest_sunscreen_filter  media_id=18031296368854911  comment=ok  2026-10-12T21:46:32Z
 C23_how_to_prepare  media_id=18133477630598463  comment=ok  2026-10-13T19:54:40Z
 CR05_half_sunscreen  media_id=18079934369459290  comment=ok  2026-10-14T15:29:56Z
+S05_purge_or_breakout  media_id=18464765332140190  comment=ok  2026-10-14T18:03:37Z
