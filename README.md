@@ -4,6 +4,11 @@ Dr. Kevin Kim 인스타그램 캐러셀 발행 파이프라인.
 
 이 저장소 하나가 **이미지 호스팅 + 콘텐츠 대기열 + 예약 발행**을 겸합니다.
 
+> **YouTube Shorts — Dr Kevin Shorts Uploader** (internal tool, uses YouTube API Services):
+> [Privacy Policy](docs/privacy.md) · [Terms of Service](docs/terms.md) ·
+> [YouTube Terms of Service](https://www.youtube.com/t/terms) · [Google Privacy Policy](https://policies.google.com/privacy) ·
+> code: [`scripts/publish_youtube.py`](scripts/publish_youtube.py) · setup: [`docs/youtube_setup.md`](docs/youtube_setup.md)
+
 > **이 저장소는 공개(public)여야 합니다.** 인스타그램 서버가 이미지를 공개 URL로 가져가야
 > 발행이 되기 때문입니다. 액세스 토큰은 저장소가 아니라 GitHub Secrets에 들어가므로
 > 공개 저장소여도 노출되지 않습니다.
