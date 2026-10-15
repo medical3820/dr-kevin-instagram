@@ -11,3 +11,4 @@
 CR05_half_sunscreen
 G01_seoul_clinic_menu
 G02_glass_check
+CR06_selfie_distance
