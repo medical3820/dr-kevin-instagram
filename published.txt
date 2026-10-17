@@ -29,3 +29,4 @@ C23_how_to_prepare  media_id=18133477630598463  comment=ok  2026-10-13T19:54:40Z
 CR05_half_sunscreen  media_id=18079934369459290  comment=ok  2026-10-14T15:29:56Z
 S05_purge_or_breakout  media_id=18464765332140190  comment=ok  2026-10-14T18:03:37Z
 G01_seoul_clinic_menu  media_id=18013313189971759  comment=ok  2026-10-16T14:18:05Z
+CR06_selfie_distance  media_id=18111391061627830  comment=ok  2026-10-17T16:23:47Z
