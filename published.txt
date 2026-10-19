@@ -32,3 +32,4 @@ G01_seoul_clinic_menu  media_id=18013313189971759  comment=ok  2026-10-16T14:18:
 CR06_selfie_distance  media_id=18111391061627830  comment=ok  2026-10-17T16:23:47Z
 C26_frequency  media_id=18099869414390639  comment=ok  2026-10-17T16:30:46Z
 G02_glass_check  media_id=17989911807066223  comment=ok  2026-10-18T14:49:38Z
+S06_pimple_patches  media_id=18143845925496208  comment=ok  2026-10-19T19:22:38Z
