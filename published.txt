@@ -34,3 +34,4 @@ C26_frequency  media_id=18099869414390639  comment=ok  2026-10-17T16:30:46Z
 G02_glass_check  media_id=17989911807066223  comment=ok  2026-10-18T14:49:38Z
 S06_pimple_patches  media_id=18143845925496208  comment=ok  2026-10-19T19:22:38Z
 C27_off_season  media_id=17962024916999301  comment=ok  2026-10-20T18:02:17Z
+CR07_nose_dots  media_id=18038789300893368  comment=ok  2026-10-21T16:07:36Z
