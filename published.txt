@@ -36,3 +36,4 @@ S06_pimple_patches  media_id=18143845925496208  comment=ok  2026-10-19T19:22:38Z
 C27_off_season  media_id=17962024916999301  comment=ok  2026-10-20T18:02:17Z
 CR07_nose_dots  media_id=18038789300893368  comment=ok  2026-10-21T16:07:36Z
 S07_hypochlorous_mist  media_id=18097805945109220  comment=ok  2026-10-21T18:07:25Z
+C28_dark_circles  media_id=18135342022662503  comment=ok  2026-10-24T16:42:46Z
