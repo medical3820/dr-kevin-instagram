@@ -15,3 +15,4 @@ CR06_selfie_distance
 CR07_nose_dots
 CR08_glass_skin_type
 CR09_pimple_patch
+CR10_sunscreen_missed_spot
