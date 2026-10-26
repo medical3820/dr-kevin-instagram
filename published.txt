@@ -38,3 +38,4 @@ CR07_nose_dots  media_id=18038789300893368  comment=ok  2026-10-21T16:07:36Z
 S07_hypochlorous_mist  media_id=18097805945109220  comment=ok  2026-10-21T18:07:25Z
 C28_dark_circles  media_id=18135342022662503  comment=ok  2026-10-24T16:42:46Z
 CR08_glass_skin_type  media_id=18102565667047970  comment=ok  2026-10-24T16:58:00Z
+S08_nose_dots  media_id=17977745859141887  comment=ok  2026-10-26T19:23:47Z
