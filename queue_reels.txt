@@ -17,3 +17,4 @@ CR08_glass_skin_type
 CR09_pimple_patch
 CR10_sunscreen_missed_spot
 CR11_spf_moisturizer
+CR12_retinol_pea
