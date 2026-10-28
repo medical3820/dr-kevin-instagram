@@ -40,3 +40,4 @@ C28_dark_circles  media_id=18135342022662503  comment=ok  2026-10-24T16:42:46Z
 CR08_glass_skin_type  media_id=18102565667047970  comment=ok  2026-10-24T16:58:00Z
 S08_nose_dots  media_id=17977745859141887  comment=ok  2026-10-26T19:23:47Z
 C29_visible_light  media_id=18092646305695460  comment=ok  2026-10-27T18:46:22Z
+CR09_pimple_patch  media_id=18130674883890561  comment=ok  2026-10-28T15:27:45Z
