@@ -18,3 +18,6 @@ CR09_pimple_patch
 CR10_sunscreen_missed_spot
 CR11_spf_moisturizer
 CR12_retinol_pea
+CR13_vitamin_c_color
+CR14_ice_water_pores
+CR15_sleep_wrinkles
