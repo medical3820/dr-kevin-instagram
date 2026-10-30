@@ -1,0 +1,35 @@
+name: Reel insights
+
+# 발행된 릴스의 평균 시청 시간·3초 건너뛰기 비율 등을 API로 모아 insights/reels.md 에 커밋한다.
+# 매주 월요일 + 수동 실행. (저장소가 공개라 이 숫자도 공개됨 — 조회수 수준의 성과 지표만 담는다)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 1 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-log
+  cancel-in-progress: false
+
+jobs:
+  insights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 인사이트 수집
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 scripts/reel_insights.py
+      - name: 커밋
+        run: |
+          git add insights
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: 릴스 인사이트 업데이트"
+          git pull --rebase
+          git push
