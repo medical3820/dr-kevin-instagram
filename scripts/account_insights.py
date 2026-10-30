@@ -149,7 +149,7 @@ def main():
 
     fc, err = get("me/insights", metric="follower_count", period="day", since=now - 29 * day, until=now)
     note("account:follower_count", err)
-    daily = [(v.get("end_time", "")[:10], v.get("value")) for v in ((fc or {}).get("data") or [{}])[0].get("values", [])] if fc else []
+    daily = [(v.get("end_time", "")[:13], v.get("value")) for v in ((fc or {}).get("data") or [{}])[0].get("values", [])] if fc else []
 
     demo = {b: demographics("follower_demographics", b) for b in ("country", "age", "gender")}
     engaged = {b: demographics("engaged_audience_demographics", b) for b in ("country", "age")}
@@ -178,7 +178,7 @@ def main():
             json.dumps(account[w][metric], ensure_ascii=False) if isinstance(account[w][metric], dict)
             else v(account[w][metric]) for w in windows)))
     if daily:
-        md += ["", "## 일별 팔로워 증감(최근 30일)", "", " ".join("%s:%s" % (d[5:], c) for d, c in daily)]
+        md += ["", "## 일별 새 팔로우(최근 30일, 집계 끝 시각 UTC — 보통 07시 = 미 서부 자정, 마지막 1~2일은 집계 지연)", "", " ".join("%s:%s" % (d[5:], c) for d, c in daily)]
     md += ["", "## 팔로워 구성 (상위)"]
     for b, lst in demo.items():
         if lst:
