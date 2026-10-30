@@ -5,6 +5,10 @@ name: Reel insights
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - scripts/account_insights.py
+      - scripts/reel_insights.py
   schedule:
     - cron: "37 1 * * 1"
 
@@ -24,7 +28,13 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python3 scripts/reel_insights.py
+      - name: 계정 전체 인사이트 (캐러셀·한 장 포함)
+        if: always()
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python3 scripts/account_insights.py
       - name: 커밋
+        if: always()
         run: |
           git add insights
           if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
