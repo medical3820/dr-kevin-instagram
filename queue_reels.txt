@@ -21,3 +21,4 @@ CR12_retinol_pea
 CR13_vitamin_c_color
 CR14_ice_water_pores
 CR15_sleep_wrinkles
+CR16_melasma_or_sunspot
