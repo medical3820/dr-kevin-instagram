@@ -190,6 +190,16 @@ def reel_container(folder, post):
     if post.get("is_ai_generated"):
         base["is_ai_generated"] = "true"
 
+    # 시험용 릴스(Trial Reels): 팔로워에게는 안 보이고 비팔로워에게만 노출 (post.json "trial": "MANUAL" | "SS_PERFORMANCE")
+    #  MANUAL = 시험으로만 두고 앱에서 직접 정식 전환 / SS_PERFORMANCE = 성과가 좋으면 자동으로 팔로워에게도 공개
+    #  거부되면 일반 릴스로 바꿔 올리지 않는다(팔로워에게 뜻밖에 노출되는 것을 막기 위해 그대로 실패 처리).
+    trial = str(post.get("trial") or "").strip().upper()
+    if trial:
+        if trial not in ("MANUAL", "SS_PERFORMANCE"):
+            die("trial 값은 MANUAL 또는 SS_PERFORMANCE 여야 합니다: %s" % trial)
+        base["trial_params"] = json.dumps({"graduation_strategy": trial})
+        print("  시험용 릴스(비팔로워 전용) · graduation_strategy=%s" % trial)
+
     # --- 2. video_url 로 컨테이너 --------------------------------------------
     try:
         cid = _request("POST", "%s/media" % IG_USER_ID, dict(base, video_url=video_url))["id"]
@@ -378,7 +388,7 @@ def main():
     if post.get("video"):
         print("발행 대상: %s (릴스)" % folder)
         container_id = reel_container(folder, post)
-        kind = "릴스"
+        kind = "시험용 릴스(비팔로워 전용, %s)" % str(post["trial"]).upper() if post.get("trial") else "릴스"
     else:
         container_id = image_container(folder, post)
         if container_id is None:

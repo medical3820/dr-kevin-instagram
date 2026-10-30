@@ -123,6 +123,14 @@ GitHub Desktop → `File → Add local repository` → 이 폴더 선택 →
 
 ---
 
+### 시험용 릴스 (Trial Reels, 2026-10-30~)
+post.json 에 `"trial": "MANUAL"` (또는 `"SS_PERFORMANCE"`)을 넣으면 팔로워에게는 안 보이고 비팔로워에게만 노출된다.
+- MANUAL: 시험으로만 남김. 정식 전환은 앱에서 직접 / SS_PERFORMANCE: 성과가 좋으면 자동으로 팔로워에게도 공개
+- 인스타가 trial_params 를 거부하면 일반 릴스로 바꿔 올리지 않고 실패로 끝난다(팔로워 뜻밖 노출 방지).
+- 시험용은 원본과 캡션을 다르게(같은 캡션이면 중복 차단에 걸림).
+
+---
+
 ## 4. 토큰 관리
 
 `Actions → Token check` 가 매주 월요일 아침에 토큰 남은 기간을 확인합니다.
