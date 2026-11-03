@@ -25,3 +25,4 @@ CR16_melasma_or_sunspot
 TR11_spf_moisturizer_hookB
 TR12_retinol_pea_hookB
 TT01_shaving_bumps
+TT02_face_wash_frequency
