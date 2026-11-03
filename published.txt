@@ -43,3 +43,4 @@ C29_visible_light  media_id=18092646305695460  comment=ok  2026-10-27T18:46:22Z
 CR09_pimple_patch  media_id=18130674883890561  comment=ok  2026-10-28T15:27:45Z
 CR10_sunscreen_missed_spot  media_id=18146014639590906  comment=ok  2026-10-31T16:06:42Z
 C30_between_seasons  media_id=18118918142587571  comment=ok  2026-10-31T17:50:08Z
+TT01_shaving_bumps  media_id=18127185310915475  comment=ok  2026-11-03T14:42:04Z
