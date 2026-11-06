@@ -48,3 +48,4 @@ C31_mark_or_scar  media_id=18098320847121175  comment=ok  2026-11-03T20:11:38Z
 CR11_spf_moisturizer  media_id=18127222393675275  comment=ok  2026-11-04T15:47:31Z
 TT02_face_wash_frequency  media_id=17952667365338103  comment=ok  2026-11-04T21:32:58Z
 TR11_spf_moisturizer_hookB  media_id=18070680056514730  comment=ok  2026-11-05T17:40:11Z
+TR12_retinol_pea_hookB  media_id=17916423870551505  comment=ok  2026-11-06T18:28:15Z
