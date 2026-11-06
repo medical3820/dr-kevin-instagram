@@ -26,7 +26,6 @@ TR11_spf_moisturizer_hookB
 TR12_retinol_pea_hookB
 TT01_shaving_bumps
 TT02_face_wash_frequency
-TT03_gym_sweat
 CR17_under_eye_part1
 CR17_under_eye_part2
 TT04_whey_protein
