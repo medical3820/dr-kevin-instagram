@@ -50,3 +50,4 @@ TT02_face_wash_frequency  media_id=17952667365338103  comment=ok  2026-11-04T21:
 TR11_spf_moisturizer_hookB  media_id=18070680056514730  comment=ok  2026-11-05T17:40:11Z
 TR12_retinol_pea_hookB  media_id=17916423870551505  comment=ok  2026-11-06T18:28:15Z
 CR12_retinol_pea  media_id=18042472004839576  comment=ok  2026-11-07T16:25:04Z
+C32_purge_or_breakout  media_id=18135230944775715  comment=ok  2026-11-07T18:06:17Z
