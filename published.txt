@@ -54,3 +54,4 @@ C32_purge_or_breakout  media_id=18135230944775715  comment=ok  2026-11-07T18:06:
 CR17_under_eye_part1  media_id=18644795059009514  comment=ok  2026-11-09T20:08:08Z
 CR17_under_eye_part2  media_id=17966856723210094  comment=ok  2026-11-10T18:16:46Z
 C33_pimple_patch  media_id=18016313720988825  comment=ok  2026-11-10T20:30:29Z
+TT05_hot_water_wash  media_id=18076327682781977  comment=ok  2026-11-10T23:23:13Z
