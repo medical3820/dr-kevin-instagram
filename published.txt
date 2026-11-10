@@ -53,3 +53,4 @@ CR12_retinol_pea  media_id=18042472004839576  comment=ok  2026-11-07T16:25:04Z
 C32_purge_or_breakout  media_id=18135230944775715  comment=ok  2026-11-07T18:06:17Z
 CR17_under_eye_part1  media_id=18644795059009514  comment=ok  2026-11-09T20:08:08Z
 CR17_under_eye_part2  media_id=17966856723210094  comment=ok  2026-11-10T18:16:46Z
+C33_pimple_patch  media_id=18016313720988825  comment=ok  2026-11-10T20:30:29Z
