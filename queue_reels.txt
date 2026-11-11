@@ -30,3 +30,4 @@ CR17_under_eye_part1
 CR17_under_eye_part2
 TT04_whey_protein
 TT05_hot_water_wash
+CR18_melasma_sessions
