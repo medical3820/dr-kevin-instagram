@@ -55,3 +55,4 @@ CR17_under_eye_part1  media_id=18644795059009514  comment=ok  2026-11-09T20:08:0
 CR17_under_eye_part2  media_id=17966856723210094  comment=ok  2026-11-10T18:16:46Z
 C33_pimple_patch  media_id=18016313720988825  comment=ok  2026-11-10T20:30:29Z
 TT05_hot_water_wash  media_id=18076327682781977  comment=ok  2026-11-10T23:23:13Z
+CR13_vitamin_c_color  media_id=17955781605322420  comment=ok  2026-11-11T18:40:32Z
