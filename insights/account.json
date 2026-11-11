@@ -1,40 +1,40 @@
 {
- "collected_at": "2026-11-09T08:41Z",
+ "collected_at": "2026-11-11T02:05Z",
  "profile": {
   "username": "dr.kevin.kim",
-  "followers_count": 1536,
+  "followers_count": 1521,
   "follows_count": 22,
-  "media_count": 53,
+  "media_count": 54,
   "id": "27090417380634133"
  },
  "account": {
   "최근 14일": {
-   "reach": 19604,
-   "views": 23240,
-   "accounts_engaged": 597,
-   "total_interactions": 721,
+   "reach": 20506,
+   "views": 24238,
+   "accounts_engaged": 603,
+   "total_interactions": 736,
    "profile_links_taps": 0,
    "follows_and_unfollows": {
     "total": null,
     "by": {
-     "FOLLOWER": 54,
-     "NON_FOLLOWER": 197
+     "FOLLOWER": 52,
+     "NON_FOLLOWER": 214
     }
    },
-   "saves": 151,
-   "shares": 66
+   "saves": 152,
+   "shares": 67
   },
   "그 전 14일": {
-   "reach": 7776,
-   "views": 9673,
+   "reach": 7778,
+   "views": 9636,
    "accounts_engaged": 75,
    "total_interactions": 144,
    "profile_links_taps": 0,
    "follows_and_unfollows": {
     "total": null,
     "by": {
-     "FOLLOWER": 61,
-     "NON_FOLLOWER": 208
+     "FOLLOWER": 67,
+     "NON_FOLLOWER": 198
     }
    },
    "saves": 16,
@@ -42,10 +42,6 @@
   }
  },
  "follower_daily": [
-  [
-   "2026-10-12T07",
-   7
-  ],
   [
    "2026-10-13T07",
    2
@@ -152,10 +148,14 @@
   ],
   [
    "2026-11-08T08",
-   0
+   3
   ],
   [
    "2026-11-09T08",
+   3
+  ],
+  [
+   "2026-11-10T08",
    0
   ]
  ],
@@ -163,11 +163,11 @@
   "country": [
    [
     "IN",
-    690
+    682
    ],
    [
     "KR",
-    324
+    327
    ],
    [
     "TW",
@@ -179,7 +179,7 @@
    ],
    [
     "ID",
-    45
+    43
    ],
    [
     "PK",
@@ -203,7 +203,7 @@
    ],
    [
     "KE",
-    13
+    12
    ],
    [
     "DZ",
@@ -222,11 +222,11 @@
     9
    ],
    [
-    "IQ",
-    9
+    "US",
+    8
    ],
    [
-    "US",
+    "IQ",
     8
    ],
    [
@@ -334,22 +334,22 @@
     2
    ],
    [
-    "ES",
+    "KG",
     2
    ],
    [
-    "LK",
+    "MM",
     2
    ]
   ],
   "age": [
    [
     "25-34",
-    538
+    537
    ],
    [
     "18-24",
-    518
+    510
    ],
    [
     "35-44",
@@ -357,11 +357,11 @@
    ],
    [
     "13-17",
-    129
+    128
    ],
    [
     "45-54",
-    82
+    83
    ],
    [
     "55-64",
@@ -375,15 +375,15 @@
   "gender": [
    [
     "U",
-    1030
+    1029
    ],
    [
     "M",
-    343
+    337
    ],
    [
     "F",
-    161
+    159
    ]
   ]
  },
@@ -601,8 +601,97 @@
    ]
   ]
  },
- "online_followers": {},
+ "online_followers": {
+  "0": 101,
+  "1": 116,
+  "2": 111,
+  "3": 120,
+  "4": 124,
+  "5": 135,
+  "6": 133,
+  "7": 117,
+  "8": 116,
+  "9": 93,
+  "10": 77,
+  "11": 78,
+  "12": 69,
+  "13": 69,
+  "14": 59,
+  "15": 73,
+  "16": 86,
+  "17": 97,
+  "18": 101,
+  "19": 104,
+  "20": 103,
+  "21": 107,
+  "22": 105,
+  "23": 114
+ },
  "media": [
+  {
+   "id": "18076327682781977",
+   "date": "2026-11-10",
+   "kind": "R",
+   "folder": "TT05_hot_water_wash",
+   "first_line": "is washing your face with hot water bad?",
+   "permalink": "https://www.instagram.com/reel/DflE6mwgaxU/",
+   "views": 194,
+   "reach": 163,
+   "likes": 1,
+   "comments": 1,
+   "saved": 0,
+   "shares": 0,
+   "ig_reels_avg_watch_time": 7969,
+   "reels_skip_rate": 34.9
+  },
+  {
+   "id": "18016313720988825",
+   "date": "2026-11-10",
+   "kind": "C",
+   "folder": "C33_pimple_patch",
+   "first_line": "what does a pimple patch actually do?",
+   "permalink": "https://www.instagram.com/p/DfkxLCKmSZG/",
+   "views": 9,
+   "reach": 2,
+   "likes": 1,
+   "comments": 1,
+   "saved": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 1
+  },
+  {
+   "id": "17966856723210094",
+   "date": "2026-11-10",
+   "kind": "R",
+   "folder": "CR17_under_eye_part2",
+   "first_line": "what your two photos mean.",
+   "permalink": "https://www.instagram.com/reel/Dfkh1LREnnI/",
+   "views": 211,
+   "reach": 174,
+   "likes": 2,
+   "comments": 1,
+   "saved": 1,
+   "shares": 0,
+   "ig_reels_avg_watch_time": 6237,
+   "reels_skip_rate": 49.2
+  },
+  {
+   "id": "18644795059009514",
+   "date": "2026-11-09",
+   "kind": "R",
+   "folder": "CR17_under_eye_part1",
+   "first_line": "are your under-eye bags water or fat?",
+   "permalink": "https://www.instagram.com/reel/DfiJxW3nFZW/",
+   "views": 203,
+   "reach": 173,
+   "likes": 3,
+   "comments": 1,
+   "saved": 1,
+   "shares": 0,
+   "ig_reels_avg_watch_time": 6054,
+   "reels_skip_rate": 53.4
+  },
   {
    "id": "18135230944775715",
    "date": "2026-11-07",
@@ -610,8 +699,8 @@
    "folder": "C32_purge_or_breakout",
    "first_line": "is it purging or a breakout?",
    "permalink": "https://www.instagram.com/p/DfcySlYmiVR/",
-   "views": 16,
-   "reach": 4,
+   "views": 21,
+   "reach": 6,
    "likes": 1,
    "comments": 1,
    "saved": 0,
@@ -626,46 +715,14 @@
    "folder": "CR12_retinol_pea",
    "first_line": "is a pea of retinol the right amount?",
    "permalink": "https://www.instagram.com/reel/DfcmqX5iRcw/",
-   "views": 1293,
-   "reach": 1137,
+   "views": 1297,
+   "reach": 1140,
    "likes": 19,
    "comments": 1,
-   "saved": 8,
+   "saved": 7,
    "shares": 1,
-   "ig_reels_avg_watch_time": 9450,
+   "ig_reels_avg_watch_time": 9415,
    "reels_skip_rate": 39.6
-  },
-  {
-   "id": "17916423870551505",
-   "date": "2026-11-06",
-   "kind": "R",
-   "folder": "TR12_retinol_pea_hookB",
-   "first_line": "how much retinoid should you actually use?",
-   "permalink": "https://www.instagram.com/reel/DfaP9nICPb6/",
-   "views": 330,
-   "reach": 293,
-   "likes": 4,
-   "comments": 1,
-   "saved": 2,
-   "shares": 0,
-   "ig_reels_avg_watch_time": 6095,
-   "reels_skip_rate": 51.4
-  },
-  {
-   "id": "18070680056514730",
-   "date": "2026-11-05",
-   "kind": "R",
-   "folder": "TR11_spf_moisturizer_hookB",
-   "first_line": "does SPF moisturizer protect as well as sunscreen?",
-   "permalink": "https://www.instagram.com/reel/DfXlrSJijw3/",
-   "views": 199,
-   "reach": 181,
-   "likes": 1,
-   "comments": 1,
-   "saved": 1,
-   "shares": 0,
-   "ig_reels_avg_watch_time": 4781,
-   "reels_skip_rate": 67.4
   },
   {
    "id": "17952667365338103",
@@ -674,14 +731,14 @@
    "folder": "TT02_face_wash_frequency",
    "first_line": "does washing your face more help acne?",
    "permalink": "https://www.instagram.com/reel/DfVbgkdjnjd/",
-   "views": 15525,
-   "reach": 13470,
-   "likes": 302,
+   "views": 15928,
+   "reach": 13819,
+   "likes": 305,
    "comments": 11,
    "saved": 128,
-   "shares": 62,
-   "ig_reels_avg_watch_time": 12588,
-   "reels_skip_rate": 29.5
+   "shares": 63,
+   "ig_reels_avg_watch_time": 12590,
+   "reels_skip_rate": 29.4
   },
   {
    "id": "18127222393675275",
@@ -690,14 +747,14 @@
    "folder": "CR11_spf_moisturizer",
    "first_line": "does the SPF in your moisturizer count?",
    "permalink": "https://www.instagram.com/reel/DfUz-DomFh4/",
-   "views": 1339,
-   "reach": 1114,
+   "views": 1340,
+   "reach": 1116,
    "likes": 21,
    "comments": 1,
    "saved": 3,
    "shares": 0,
-   "ig_reels_avg_watch_time": 9542,
-   "reels_skip_rate": 47
+   "ig_reels_avg_watch_time": 9527,
+   "reels_skip_rate": 47.1
   },
   {
    "id": "18098320847121175",
@@ -707,13 +764,13 @@
    "first_line": "Is it an acne scar or just a mark?",
    "permalink": "https://www.instagram.com/p/DfStd0qmzkv/",
    "views": 28,
-   "reach": 18,
+   "reach": 19,
    "likes": 1,
    "comments": 1,
    "saved": 0,
    "shares": 0,
    "follows": 0,
-   "profile_visits": 0
+   "profile_visits": 1
   },
   {
    "id": "18127185310915475",
@@ -754,13 +811,13 @@
    "folder": "CR10_sunscreen_missed_spot",
    "first_line": "which spot does your sunscreen miss?",
    "permalink": "https://www.instagram.com/reel/DfKi_hylUkK/",
-   "views": 1443,
-   "reach": 1280,
+   "views": 1444,
+   "reach": 1282,
    "likes": 22,
    "comments": 1,
    "saved": 5,
    "shares": 2,
-   "ig_reels_avg_watch_time": 11112,
+   "ig_reels_avg_watch_time": 11103,
    "reels_skip_rate": 23.3
   },
   {
@@ -770,13 +827,13 @@
    "folder": "CR09_pimple_patch",
    "first_line": "does a pimple patch work on every spot?",
    "permalink": "https://www.instagram.com/reel/DfCwKL_n1Y9/",
-   "views": 1431,
-   "reach": 1211,
+   "views": 1435,
+   "reach": 1214,
    "likes": 11,
    "comments": 1,
    "saved": 3,
    "shares": 1,
-   "ig_reels_avg_watch_time": 12618,
+   "ig_reels_avg_watch_time": 12626,
    "reels_skip_rate": 33.1
   },
   {
@@ -882,14 +939,14 @@
    "folder": "",
    "first_line": "Laser hair removal can make facial hair grow MORE? Yes—it's a rare but",
    "permalink": "https://www.instagram.com/reel/DewCw58iTT_/",
-   "views": 161,
-   "reach": 142,
+   "views": 162,
+   "reach": 143,
    "likes": 2,
    "comments": 1,
    "saved": 2,
    "shares": 0,
-   "ig_reels_avg_watch_time": 11128,
-   "reels_skip_rate": 62.9
+   "ig_reels_avg_watch_time": 11065,
+   "reels_skip_rate": 63.2
   },
   {
    "id": "17962024916999301",
@@ -930,14 +987,14 @@
    "folder": "G02_glass_check",
    "first_line": "Before you book a laser for acne marks in Korea, do this 10-second che",
    "permalink": "https://www.instagram.com/reel/Deo71kUjC-u/",
-   "views": 1552,
-   "reach": 1424,
+   "views": 1554,
+   "reach": 1426,
    "likes": 13,
    "comments": 1,
    "saved": 3,
    "shares": 2,
-   "ig_reels_avg_watch_time": 9213,
-   "reels_skip_rate": 37
+   "ig_reels_avg_watch_time": 9202,
+   "reels_skip_rate": 37.1
   },
   {
    "id": "18099869414390639",
@@ -962,14 +1019,14 @@
    "folder": "CR06_selfie_distance",
    "first_line": "why does my nose look bigger in selfies?",
    "permalink": "https://www.instagram.com/reel/Demh0nyj7s2/",
-   "views": 1634,
-   "reach": 1372,
+   "views": 1635,
+   "reach": 1374,
    "likes": 9,
    "comments": 1,
    "saved": 4,
    "shares": 4,
-   "ig_reels_avg_watch_time": 7879,
-   "reels_skip_rate": 36.3
+   "ig_reels_avg_watch_time": 7875,
+   "reels_skip_rate": 36.4
   },
   {
    "id": "18013313189971759",
@@ -1011,7 +1068,7 @@
    "first_line": "how much sunscreen should you put on your face?",
    "permalink": "https://www.instagram.com/reel/DeetRhZiEF8/",
    "views": 3774,
-   "reach": 3058,
+   "reach": 3063,
    "likes": 18,
    "comments": 1,
    "saved": 5,
@@ -1122,8 +1179,8 @@
    "folder": "S03_photograph_or_skin",
    "first_line": "Glass skin is the English name that travelled. The Korean word it came",
    "permalink": "https://www.instagram.com/p/DeNRr5Hj_fn/",
-   "views": 89,
-   "reach": 39,
+   "views": 90,
+   "reach": 40,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1250,8 +1307,8 @@
    "folder": "S02_half_the_sunscreen",
    "first_line": "SPF is measured with 2 mg of sunscreen on every square centimetre of s",
    "permalink": "https://www.instagram.com/p/Dd7M_WCHa74/",
-   "views": 159,
-   "reach": 56,
+   "views": 160,
+   "reach": 57,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1716,7 +1773,7 @@
    "permalink": "https://www.instagram.com/p/DcDyxy9DENE/",
    "views": 178,
    "reach": 136,
-   "likes": 50,
+   "likes": 49,
    "comments": 1,
    "saved": 1,
    "shares": 1,
@@ -1746,8 +1803,8 @@
    "folder": "",
    "first_line": "“Just recommend whatever works best.”",
    "permalink": "https://www.instagram.com/p/Db5ie_MFNdE/",
-   "views": 131,
-   "reach": 110,
+   "views": 132,
+   "reach": 111,
    "likes": 45,
    "comments": 2,
    "saved": 1,
