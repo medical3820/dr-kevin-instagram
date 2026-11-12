@@ -1,32 +1,40 @@
 {
-  "id": "C34",
-  "format": "D",
-  "caption": "is hypochlorous acid mist worth it for your face?\nIt's well proven in wound care. For everyday face use, the evidence is still early.\n\nHypochlorous acid (HOCl) is the key ingredient in the trending face mists. It's also a molecule your own white blood cells make to kill microbes. In wound care it's valued for being antimicrobial while generally well tolerated.\n\nWound care is where it's most studied. A 2026 review of one pure HOCl wound cleanser pulled together 56 publications and 2,682 patients, including newborns, with no product-related complications reported. Two of its authors work for the manufacturer.\n\nElsewhere the evidence thins out. It has been studied as an add-on for eyelid inflammation (blepharitis), and in smaller, mixed studies for eczema, seborrhoeic dermatitis and acne. A 2025 review across specialties found it useful in most studies, but the results weren't entirely consistent and the right dosing isn't settled. Daily \"calming\" and \"glow\" aren't what those studies tested.\n\nBottles also differ. How much of a product is true hypochlorous acid, rather than hypochlorite, depends on pH and how it was made, and it can drift over time. Storage matters.\n\nWhat this doesn't mean: a mist isn't an acne treatment. If you like how one feels, that's a fine reason to use it. Just don't expect it to do the job of one.\n\nAmaya R et al. J Wound Care 2026;35(10). doi:10.12968/jowc.2026.0428\nHaralovic V et al. Biomedicines 2025. doi:10.3390/biomedicines13122921\nEdwards-Jones V. Adv Skin Wound Care 2026. doi:10.1097/ASW.0000000000000524\n\nSave this for the next time a mist shows up in your feed.\n\nGeneral education only.\n\n#HypochlorousAcid #SkincareIngredients #FaceMist #Redness #SkincareScience",
-  "first_comment": "Most people use these mists for how they feel. Is that you, or did you buy one for a specific problem?",
-  "slides": [
-    {
-      "file": "01.jpg",
-      "alt_text": "Slide 1 of 6: A glass bottle misting in window light. Hypochlorous acid is proven in wounds, still early on faces."
-    },
-    {
-      "file": "02.jpg",
-      "alt_text": "Slide 2 of 6: Your body, wound care and face mists use the same molecule with very different evidence."
-    },
-    {
-      "file": "03.jpg",
-      "alt_text": "Slide 3 of 6: 2,682 patients in 56 publications on one HOCl wound cleanser, no product-related complications."
-    },
-    {
-      "file": "04.jpg",
-      "alt_text": "Slide 4 of 6: Not an acne treatment, bottles differ, and strength drifts over time."
-    },
-    {
-      "file": "05.jpg",
-      "alt_text": "Slide 5 of 6: Evidence is strongest for wounds and thin for daily calming or glow."
-    },
-    {
-      "file": "06.jpg",
-      "alt_text": "Slide 6 of 6: Well studied in wound care, thin for acne, redness and daily face use."
-    }
-  ]
+ "id": "C34",
+ "format": "D",
+ "caption": "is hypochlorous acid mist worth it for your face?\nIt's well proven in wound care. For everyday face use, the evidence is still early.\n\nHypochlorous acid (HOCl) is the key ingredient in the trending face mists. It's also a molecule your own white blood cells make to kill microbes. In wound care it's valued for being antimicrobial while generally well tolerated.\n\nWound care is where it's most studied. A 2026 review of one pure HOCl wound cleanser pulled together 56 publications and 2,682 patients, including newborns, with no product-related complications reported. Two of its authors work for the manufacturer.\n\nElsewhere the evidence thins out. It has been studied as an add-on for eyelid inflammation (blepharitis), and in smaller, mixed studies for eczema, seborrhoeic dermatitis and acne. A 2025 review across specialties found it useful in most studies, but the results weren't entirely consistent and the right dosing isn't settled. Daily \"calming\" and \"glow\" aren't what those studies tested.\n\nBottles also differ. How much of a product is true hypochlorous acid, rather than hypochlorite, depends on pH and how it was made, and it can drift over time. Storage matters.\n\nWhat this doesn't mean: a mist isn't an acne treatment. If you like how one feels, that's a fine reason to use it. Just don't expect it to do the job of one.\n\nAmaya R et al. J Wound Care 2026;35(10). doi:10.12968/jowc.2026.0428\nHaralovic V et al. Biomedicines 2025. doi:10.3390/biomedicines13122921\nEdwards-Jones V. Adv Skin Wound Care 2026. doi:10.1097/ASW.0000000000000524\n\nSave this for the next time a mist shows up in your feed.\n\nGeneral education only.\n\n#HypochlorousAcid #SkincareIngredients #FaceMist #Redness #SkincareScience",
+ "first_comment": "Most people use these mists for how they feel. Is that you, or did you buy one for a specific problem?",
+ "slides": [
+  {
+   "file": "01.jpg",
+   "alt_text": "Slide 1 of 8: Cover with a face and a spray bottle labelled HOCl. This face mist is proven, just not on faces."
+  },
+  {
+   "file": "02.jpg",
+   "alt_text": "Slide 2 of 8: What it is: hypochlorous acid is the key ingredient in trending face mists and a molecule your white blood cells make."
+  },
+  {
+   "file": "03.jpg",
+   "alt_text": "Slide 3 of 8: Where the proof is: 56 publications and 2,682 patients on one HOCl wound cleanser, no product-related complications reported."
+  },
+  {
+   "file": "04.jpg",
+   "alt_text": "Slide 4 of 8: Where it thins out: add-on for eyelid inflammation, smaller mixed studies for eczema and acne, dosing not settled."
+  },
+  {
+   "file": "05.jpg",
+   "alt_text": "Slide 5 of 8: What nobody tested: daily calming and glow are not what those studies tested."
+  },
+  {
+   "file": "06.jpg",
+   "alt_text": "Slide 6 of 8: Bottles differ: how much is true hypochlorous acid depends on pH, how it was made and time."
+  },
+  {
+   "file": "07.jpg",
+   "alt_text": "Slide 7 of 8: Is it worth it: fine if you like how it feels, not an acne treatment."
+  },
+  {
+   "file": "08.jpg",
+   "alt_text": "Slide 8 of 8: Dr. Kevin Kim, Skincare Fact-Check. Follow, with the three sources listed."
+  }
+ ]
 }

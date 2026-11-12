@@ -32,3 +32,4 @@ C31_mark_or_scar
 C32_purge_or_breakout
 C33_pimple_patch
 C34_hypochlorous_mist
+C35_sunscreen_amount
