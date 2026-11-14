@@ -57,3 +57,4 @@ C33_pimple_patch  media_id=18016313720988825  comment=ok  2026-11-10T20:30:29Z
 TT05_hot_water_wash  media_id=18076327682781977  comment=ok  2026-11-10T23:23:13Z
 CR13_vitamin_c_color  media_id=17955781605322420  comment=ok  2026-11-11T18:40:32Z
 TT04_whey_protein  media_id=18128043916900140  comment=ok  2026-11-12T22:43:34Z
+OY_basics_part1  media_id=18486086965119444  comment=ok  2026-11-14T02:45:21Z
