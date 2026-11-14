@@ -83,14 +83,33 @@ def _request(method, path, params, use_version=True):
 
 
 def check_url(url):
-    req = urllib.request.Request(url, method="HEAD")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            ctype = resp.headers.get("Content-Type", "")
-            length = int(resp.headers.get("Content-Length") or 0)
-            return resp.status == 200, ctype, length
-    except Exception as e:
-        return False, str(e), 0
+    """URL 이 열리는지 확인. raw.githubusercontent.com 은 큰 파일의 첫 요청이 가끔 30초 넘게 걸려
+    (2026-11-13 OY_basics_part1 가 두 번 실패) 시간을 늘리고 3번까지 다시 시도한다.
+    HEAD 가 안 되면 첫 1바이트만 받는 GET 으로 확인한다."""
+    last = ""
+    for attempt in range(3):
+        for method in ("HEAD", "GET"):
+            headers = {"Range": "bytes=0-0"} if method == "GET" else {}
+            req = urllib.request.Request(url, method=method, headers=headers)
+            try:
+                with urllib.request.urlopen(req, timeout=60) as resp:
+                    ctype = resp.headers.get("Content-Type", "")
+                    length = int(resp.headers.get("Content-Length") or 0)
+                    crange = resp.headers.get("Content-Range", "")
+                    if method == "GET" and "/" in crange:
+                        try:
+                            length = int(crange.rsplit("/", 1)[1])
+                        except ValueError:
+                            pass
+                    if resp.status in (200, 206):
+                        return True, ctype, length
+                    last = "HTTP %s" % resp.status
+            except Exception as e:
+                last = str(e)
+        if attempt < 2:
+            print("  URL 확인 재시도 %d/2 (%s)" % (attempt + 1, last))
+            time.sleep(10)
+    return False, last, 0
 
 
 # --- 발행 요일 게이트 (2026-10-05) -----------------------------------------
