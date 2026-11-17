@@ -446,6 +446,25 @@ def main():
         except BaseException:
             print("경고: 첫 댓글 실패. 게시물은 정상 발행되었습니다. 앱에서 직접 달아주세요.")
 
+    # --- 6-1. 추가 댓글 (post.json "extra_comments": ["...", ...], 2026-11-17) ----
+    # 실패해도 발행·기록에는 영향이 없도록 전부 감싼다.
+    try:
+        extras = post.get("extra_comments") or []
+        if isinstance(extras, str):
+            extras = [extras]
+        for n, extra in enumerate(extras):
+            extra = (extra or "").strip()
+            if not extra:
+                continue
+            time.sleep(5)
+            try:
+                c2 = _request("POST", "%s/comments" % media_id, {"message": extra})
+                print("추가 댓글 %d 완료. comment_id=%s" % (n + 1, c2.get("id")))
+            except BaseException:
+                print("경고: 추가 댓글 %d 실패. 앱에서 직접 달아주세요." % (n + 1))
+    except BaseException:
+        print("경고: 추가 댓글 처리 중 오류. 앱에서 직접 달아주세요.")
+
     # --- 7. 기록 (발행 직후 남긴 줄의 comment 상태를 확정) ------------------------
     lines = open(PUBLISHED, encoding="utf-8").read().split("\n")
     for i in range(len(lines) - 1, -1, -1):
