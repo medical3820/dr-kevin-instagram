@@ -64,3 +64,4 @@ OY_tourist_top5  media_id=18148897525565371  comment=ok  2026-11-15T17:05:21Z
 CR18_melasma_sessions  media_id=17956161567276480  comment=ok  2026-11-16T18:55:57Z
 OY_mask_top3  media_id=18118198235031184  comment=ok  2026-11-17T19:50:48Z
 C35_sunscreen_amount  media_id=17994479499081387  comment=ok  2026-11-17T21:50:28Z
+OY_mask_top3_v2  media_id=18001544720823313  comment=ok  2026-11-18T19:04:54Z
