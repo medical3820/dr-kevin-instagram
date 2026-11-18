@@ -38,3 +38,4 @@ OY_sunscreen4
 OY_global_top10
 OY_mask_top3
 OY_mask_top3_v2
+HF_moisturizer_types
