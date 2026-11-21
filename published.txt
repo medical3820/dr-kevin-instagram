@@ -66,3 +66,4 @@ OY_mask_top3  media_id=18118198235031184  comment=ok  2026-11-17T19:50:48Z
 C35_sunscreen_amount  media_id=17994479499081387  comment=ok  2026-11-17T21:50:28Z
 OY_mask_top3_v2  media_id=18001544720823313  comment=ok  2026-11-18T19:04:54Z
 CR16_melasma_or_sunspot  media_id=18446632189182406  comment=ok  2026-11-21T18:16:09Z
+C36_salicylic_acid_evidence  media_id=18137203999740468  comment=ok  2026-11-21T20:10:31Z
