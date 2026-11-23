@@ -1,71 +1,47 @@
 {
- "collected_at": "2026-11-18T02:40Z",
+ "collected_at": "2026-11-23T09:48Z",
  "profile": {
   "username": "dr.kevin.kim",
-  "followers_count": 1492,
+  "followers_count": 1508,
   "follows_count": 5,
   "media_count": 57,
   "id": "27090417380634133"
  },
  "account": {
   "최근 14일": {
-   "reach": 25146,
-   "views": 31232,
-   "accounts_engaged": 831,
-   "total_interactions": 1110,
+   "reach": 12073,
+   "views": 16682,
+   "accounts_engaged": 390,
+   "total_interactions": 587,
    "profile_links_taps": 0,
    "follows_and_unfollows": {
     "total": null,
     "by": {
-     "FOLLOWER": 105,
-     "NON_FOLLOWER": 201
+     "FOLLOWER": 181,
+     "NON_FOLLOWER": 193
     }
    },
-   "saves": 261,
-   "shares": 109
+   "saves": 158,
+   "shares": 54
   },
   "그 전 14일": {
-   "reach": 5393,
-   "views": 6428,
-   "accounts_engaged": 74,
-   "total_interactions": 106,
+   "reach": 20029,
+   "views": 23693,
+   "accounts_engaged": 601,
+   "total_interactions": 730,
    "profile_links_taps": 0,
    "follows_and_unfollows": {
     "total": null,
     "by": {
-     "FOLLOWER": 89,
-     "NON_FOLLOWER": 213
+     "FOLLOWER": 60,
+     "NON_FOLLOWER": 219
     }
    },
-   "saves": 14,
-   "shares": 4
+   "saves": 152,
+   "shares": 67
   }
  },
  "follower_daily": [
-  [
-   "2026-10-20T07",
-   3
-  ],
-  [
-   "2026-10-21T07",
-   18
-  ],
-  [
-   "2026-10-22T07",
-   16
-  ],
-  [
-   "2026-10-23T07",
-   5
-  ],
-  [
-   "2026-10-24T07",
-   2
-  ],
-  [
-   "2026-10-25T07",
-   6
-  ],
   [
    "2026-10-26T07",
    2
@@ -156,6 +132,30 @@
   ],
   [
    "2026-11-17T08",
+   30
+  ],
+  [
+   "2026-11-18T08",
+   24
+  ],
+  [
+   "2026-11-19T08",
+   21
+  ],
+  [
+   "2026-11-20T08",
+   17
+  ],
+  [
+   "2026-11-21T08",
+   4
+  ],
+  [
+   "2026-11-22T08",
+   0
+  ],
+  [
+   "2026-11-23T08",
    0
   ]
  ],
@@ -163,11 +163,15 @@
   "country": [
    [
     "IN",
-    594
+    569
    ],
    [
     "KR",
-    302
+    296
+   ],
+   [
+    "US",
+    155
    ],
    [
     "TW",
@@ -175,46 +179,42 @@
    ],
    [
     "BD",
-    79
-   ],
-   [
-    "US",
-    74
+    71
    ],
    [
     "ID",
-    40
+    41
    ],
    [
     "PK",
-    18
-   ],
-   [
-    "PH",
     17
    ],
    [
-    "MA",
+    "PH",
     16
    ],
    [
     "UZ",
-    15
-   ],
-   [
-    "BR",
     14
    ],
    [
-    "KE",
+    "BR",
+    13
+   ],
+   [
+    "MA",
+    13
+   ],
+   [
+    "VN",
     11
    ],
    [
-    "DZ",
-    10
+    "NG",
+    11
    ],
    [
-    "NG",
+    "KE",
     10
    ],
    [
@@ -222,15 +222,15 @@
     9
    ],
    [
-    "MG",
-    8
+    "DZ",
+    9
    ],
    [
     "TH",
-    8
+    9
    ],
    [
-    "VN",
+    "MG",
     8
    ],
    [
@@ -254,6 +254,10 @@
     6
    ],
    [
+    "UA",
+    5
+   ],
+   [
     "MX",
     5
    ],
@@ -266,19 +270,11 @@
     5
    ],
    [
-    "UA",
-    4
-   ],
-   [
     "AE",
     4
    ],
    [
     "AF",
-    4
-   ],
-   [
-    "MY",
     4
    ],
    [
@@ -294,11 +290,11 @@
     3
    ],
    [
-    "ET",
+    "MY",
     3
    ],
    [
-    "AR",
+    "ET",
     3
    ],
    [
@@ -310,7 +306,11 @@
     3
    ],
    [
-    "NP",
+    "ZW",
+    3
+   ],
+   [
+    "RU",
     2
    ],
    [
@@ -318,7 +318,15 @@
     2
    ],
    [
-    "FR",
+    "JP",
+    2
+   ],
+   [
+    "DO",
+    2
+   ],
+   [
+    "UG",
     2
    ],
    [
@@ -326,50 +334,42 @@
     2
    ],
    [
-    "KG",
+    "GR",
     2
    ],
    [
-    "CA",
-    2
-   ],
-   [
-    "MM",
-    2
-   ],
-   [
-    "ZW",
+    "LK",
     2
    ]
   ],
   "age": [
    [
     "25-34",
-    518
+    520
    ],
    [
     "18-24",
-    465
+    453
    ],
    [
     "35-44",
-    235
-   ],
-   [
-    "13-17",
-    110
+    259
    ],
    [
     "45-54",
-    92
+    106
+   ],
+   [
+    "13-17",
+    105
    ],
    [
     "55-64",
-    30
+    44
    ],
    [
     "65+",
-    16
+    19
    ]
   ],
   "gender": [
@@ -379,27 +379,27 @@
    ],
    [
     "M",
-    308
+    312
    ],
    [
     "F",
-    184
+    220
    ]
   ]
  },
  "engaged_demographics": {
   "country": [
    [
+    "US",
+    250
+   ],
+   [
     "IN",
-    179
+    195
    ],
    [
     "PH",
-    130
-   ],
-   [
-    "US",
-    126
+    133
    ],
    [
     "MY",
@@ -407,39 +407,43 @@
    ],
    [
     "CA",
-    20
+    23
+   ],
+   [
+    "AU",
+    18
+   ],
+   [
+    "HK",
+    15
    ],
    [
     "ID",
     14
    ],
    [
-    "AE",
+    "PK",
     14
-   ],
-   [
-    "IT",
-    14
-   ],
-   [
-    "AU",
-    14
-   ],
-   [
-    "HK",
-    12
-   ],
-   [
-    "NP",
-    11
    ],
    [
     "BD",
-    11
+    13
    ],
    [
-    "PK",
-    9
+    "AE",
+    13
+   ],
+   [
+    "NP",
+    12
+   ],
+   [
+    "IT",
+    12
+   ],
+   [
+    "DE",
+    8
    ],
    [
     "KR",
@@ -450,11 +454,19 @@
     8
    ],
    [
-    "DE",
+    "TR",
     7
    ],
    [
-    "TR",
+    "HU",
+    6
+   ],
+   [
+    "SG",
+    6
+   ],
+   [
+    "MN",
     6
    ],
    [
@@ -462,7 +474,11 @@
     5
    ],
    [
-    "MN",
+    "FR",
+    5
+   ],
+   [
+    "GB",
     5
    ],
    [
@@ -470,27 +486,11 @@
     5
    ],
    [
-    "PT",
-    4
+    "TH",
+    5
    ],
    [
     "NZ",
-    4
-   ],
-   [
-    "FR",
-    4
-   ],
-   [
-    "HU",
-    4
-   ],
-   [
-    "TH",
-    4
-   ],
-   [
-    "NL",
     4
    ],
    [
@@ -502,23 +502,15 @@
     3
    ],
    [
-    "SA",
-    3
-   ],
-   [
-    "QA",
-    3
-   ],
-   [
-    "SG",
-    3
-   ],
-   [
-    "DZ",
+    "PT",
     3
    ],
    [
     "SK",
+    3
+   ],
+   [
+    "CH",
     3
    ],
    [
@@ -534,15 +526,23 @@
     3
    ],
    [
+    "PL",
+    3
+   ],
+   [
+    "NL",
+    3
+   ],
+   [
+    "SA",
+    2
+   ],
+   [
     "BR",
     2
    ],
    [
-    "GB",
-    2
-   ],
-   [
-    "CH",
+    "ZA",
     2
    ],
    [
@@ -550,11 +550,11 @@
     2
    ],
    [
-    "CO",
+    "KW",
     2
    ],
    [
-    "KW",
+    "CO",
     2
    ],
    [
@@ -562,7 +562,7 @@
     2
    ],
    [
-    "PL",
+    "LB",
     2
    ],
    [
@@ -572,62 +572,101 @@
   ],
   "age": [
    [
-    "13-17",
-    241
+    "18-24",
+    259
    ],
    [
-    "18-24",
-    224
+    "13-17",
+    256
    ],
    [
     "25-34",
-    191
+    237
    ],
    [
     "35-44",
-    36
+    69
    ],
    [
     "45-54",
-    26
-   ],
-   [
-    "65+",
-    5
+    49
    ],
    [
     "55-64",
-    2
+    15
+   ],
+   [
+    "65+",
+    12
    ]
   ]
  },
- "online_followers": {
-  "0": 127,
-  "1": 124,
-  "2": 136,
-  "3": 129,
-  "4": 147,
-  "5": 149,
-  "6": 140,
-  "7": 141,
-  "8": 127,
-  "9": 127,
-  "10": 107,
-  "11": 109,
-  "12": 107,
-  "13": 92,
-  "14": 105,
-  "15": 105,
-  "16": 126,
-  "17": 127,
-  "18": 132,
-  "19": 133,
-  "20": 136,
-  "21": 128,
-  "22": 126,
-  "23": 132
- },
+ "online_followers": {},
  "media": [
+  {
+   "id": "17880362214574012",
+   "date": "2026-11-22",
+   "kind": "R",
+   "folder": "CR14_ice_water_pores",
+   "first_line": "does ice water close your pores?",
+   "permalink": "https://www.instagram.com/reel/DgDc9I5jWp1/",
+   "views": 1439,
+   "reach": 1208,
+   "likes": 5,
+   "comments": 1,
+   "saved": 1,
+   "shares": 0,
+   "ig_reels_avg_watch_time": 8916,
+   "reels_skip_rate": 37.2
+  },
+  {
+   "id": "18137203999740468",
+   "date": "2026-11-21",
+   "kind": "C",
+   "folder": "C36_salicylic_acid_evidence",
+   "first_line": "does salicylic acid actually work for acne?",
+   "permalink": "https://www.instagram.com/p/DgBDoisG8AV/",
+   "views": 15,
+   "reach": 7,
+   "likes": 0,
+   "comments": 1,
+   "saved": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0
+  },
+  {
+   "id": "18446632189182406",
+   "date": "2026-11-21",
+   "kind": "R",
+   "folder": "CR16_melasma_or_sunspot",
+   "first_line": "is it melasma or a sun spot?",
+   "permalink": "https://www.instagram.com/reel/DgA2ghSDG3Y/",
+   "views": 1285,
+   "reach": 1147,
+   "likes": 8,
+   "comments": 1,
+   "saved": 3,
+   "shares": 2,
+   "ig_reels_avg_watch_time": 7505,
+   "reels_skip_rate": 38.3
+  },
+  {
+   "id": "18001544720823313",
+   "date": "2026-11-18",
+   "kind": "R",
+   "folder": "OY_mask_top3",
+   "first_line": "The 3 sheet masks the world orders most from Olive Young 🛒 (Not sponso",
+   "permalink": "https://www.instagram.com/reel/Df5NsSHFBEC/",
+   "views": 147,
+   "reach": 128,
+   "likes": 3,
+   "comments": 3,
+   "saved": 0,
+   "shares": 0,
+   "ig_reels_avg_watch_time": 5819,
+   "reels_skip_rate": 62.3
+  },
   {
    "id": "17994479499081387",
    "date": "2026-11-17",
@@ -635,14 +674,14 @@
    "folder": "C35_sunscreen_amount",
    "first_line": "how much sunscreen is enough?",
    "permalink": "https://www.instagram.com/p/Df274-Fj85E/",
-   "views": 3,
-   "reach": 2,
+   "views": 55,
+   "reach": 26,
    "likes": 1,
    "comments": 1,
    "saved": 0,
    "shares": 0,
    "follows": 0,
-   "profile_visits": 0
+   "profile_visits": 1
   },
   {
    "id": "17956161567276480",
@@ -651,30 +690,14 @@
    "folder": "CR18_melasma_sessions",
    "first_line": "can one laser session clear melasma?",
    "permalink": "https://www.instagram.com/reel/Df0DFw6HDFi/",
-   "views": 258,
-   "reach": 235,
+   "views": 276,
+   "reach": 251,
    "likes": 4,
-   "comments": 1,
+   "comments": 3,
    "saved": 2,
    "shares": 0,
-   "ig_reels_avg_watch_time": 4667,
-   "reels_skip_rate": 66.5
-  },
-  {
-   "id": "18148897525565371",
-   "date": "2026-11-15",
-   "kind": "R",
-   "folder": "OY_tourist_top5",
-   "first_line": "Tourists' Top 5 at Olive Young 🇰🇷 Picked by the data, not by hype. Not",
-   "permalink": "https://www.instagram.com/reel/DfxRlx9gD2e/",
-   "views": 947,
-   "reach": 831,
-   "likes": 20,
-   "comments": 1,
-   "saved": 10,
-   "shares": 9,
-   "ig_reels_avg_watch_time": 8514,
-   "reels_skip_rate": 45.1
+   "ig_reels_avg_watch_time": 4876,
+   "reels_skip_rate": 66
   },
   {
    "id": "18126014458935202",
@@ -683,14 +706,14 @@
    "folder": "OY_global_top10",
    "first_line": "What the world is ordering from Olive Young right now 🛒 (Not sponsored",
    "permalink": "https://www.instagram.com/reel/Dfu5CFNjoGc/",
-   "views": 1268,
-   "reach": 1143,
+   "views": 1288,
+   "reach": 1154,
    "likes": 23,
    "comments": 1,
-   "saved": 19,
+   "saved": 20,
    "shares": 10,
-   "ig_reels_avg_watch_time": 8894,
-   "reels_skip_rate": 50.9
+   "ig_reels_avg_watch_time": 8962,
+   "reels_skip_rate": 50.6
   },
   {
    "id": "18110643011211523",
@@ -699,8 +722,8 @@
    "folder": "C34_hypochlorous_mist",
    "first_line": "is hypochlorous acid mist worth it for your face?",
    "permalink": "https://www.instagram.com/p/Dfu4iEJlmDG/",
-   "views": 60,
-   "reach": 28,
+   "views": 77,
+   "reach": 41,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -715,14 +738,14 @@
    "folder": "OY_basics_part1",
    "first_line": "shopping for skincare in Korea and don't know where to start?",
    "permalink": "https://www.instagram.com/reel/DftKa1tglCB/",
-   "views": 898,
-   "reach": 733,
+   "views": 914,
+   "reach": 749,
    "likes": 15,
    "comments": 1,
    "saved": 12,
    "shares": 4,
-   "ig_reels_avg_watch_time": 7427,
-   "reels_skip_rate": 54.8
+   "ig_reels_avg_watch_time": 7487,
+   "reels_skip_rate": 54.7
   },
   {
    "id": "18128043916900140",
@@ -731,13 +754,13 @@
    "folder": "TT04_whey_protein",
    "first_line": "does whey protein cause acne?",
    "permalink": "https://www.instagram.com/reel/DfqJ8d1kxm5/",
-   "views": 1155,
-   "reach": 1039,
-   "likes": 13,
+   "views": 1162,
+   "reach": 1045,
+   "likes": 14,
    "comments": 1,
    "saved": 0,
    "shares": 1,
-   "ig_reels_avg_watch_time": 6930,
+   "ig_reels_avg_watch_time": 6928,
    "reels_skip_rate": 42.7
   },
   {
@@ -747,14 +770,14 @@
    "folder": "CR13_vitamin_c_color",
    "first_line": "has your vitamin C serum gone off?",
    "permalink": "https://www.instagram.com/reel/DfnJWK6DJYH/",
-   "views": 1290,
-   "reach": 1088,
-   "likes": 19,
+   "views": 1298,
+   "reach": 1093,
+   "likes": 20,
    "comments": 7,
    "saved": 11,
    "shares": 7,
-   "ig_reels_avg_watch_time": 8347,
-   "reels_skip_rate": 45.9
+   "ig_reels_avg_watch_time": 8358,
+   "reels_skip_rate": 45.8
   },
   {
    "id": "18076327682781977",
@@ -763,13 +786,13 @@
    "folder": "TT05_hot_water_wash",
    "first_line": "is washing your face with hot water bad?",
    "permalink": "https://www.instagram.com/reel/DflE6mwgaxU/",
-   "views": 1219,
-   "reach": 1067,
-   "likes": 8,
+   "views": 1228,
+   "reach": 1075,
+   "likes": 9,
    "comments": 2,
    "saved": 2,
    "shares": 0,
-   "ig_reels_avg_watch_time": 9318,
+   "ig_reels_avg_watch_time": 9356,
    "reels_skip_rate": 32.6
   },
   {
@@ -779,9 +802,9 @@
    "folder": "C33_pimple_patch",
    "first_line": "what does a pimple patch actually do?",
    "permalink": "https://www.instagram.com/p/DfkxLCKmSZG/",
-   "views": 54,
-   "reach": 35,
-   "likes": 2,
+   "views": 73,
+   "reach": 46,
+   "likes": 3,
    "comments": 1,
    "saved": 0,
    "shares": 0,
@@ -795,13 +818,13 @@
    "folder": "CR17_under_eye_part2",
    "first_line": "what your two photos mean.",
    "permalink": "https://www.instagram.com/reel/Dfkh1LREnnI/",
-   "views": 1017,
-   "reach": 866,
-   "likes": 13,
+   "views": 1023,
+   "reach": 869,
+   "likes": 14,
    "comments": 3,
    "saved": 3,
    "shares": 0,
-   "ig_reels_avg_watch_time": 7236,
+   "ig_reels_avg_watch_time": 7246,
    "reels_skip_rate": 41.9
   },
   {
@@ -811,14 +834,14 @@
    "folder": "CR17_under_eye_part1",
    "first_line": "are your under-eye bags water or fat?",
    "permalink": "https://www.instagram.com/reel/DfiJxW3nFZW/",
-   "views": 223,
-   "reach": 187,
+   "views": 225,
+   "reach": 189,
    "likes": 3,
    "comments": 1,
    "saved": 1,
    "shares": 0,
-   "ig_reels_avg_watch_time": 5944,
-   "reels_skip_rate": 54.2
+   "ig_reels_avg_watch_time": 5913,
+   "reels_skip_rate": 54.1
   },
   {
    "id": "18135230944775715",
@@ -827,11 +850,11 @@
    "folder": "C32_purge_or_breakout",
    "first_line": "is it purging or a breakout?",
    "permalink": "https://www.instagram.com/p/DfcySlYmiVR/",
-   "views": 45,
-   "reach": 22,
+   "views": 59,
+   "reach": 31,
    "likes": 1,
    "comments": 1,
-   "saved": 0,
+   "saved": 1,
    "shares": 0,
    "follows": 0,
    "profile_visits": 1
@@ -843,14 +866,14 @@
    "folder": "CR12_retinol_pea",
    "first_line": "is a pea of retinol the right amount?",
    "permalink": "https://www.instagram.com/reel/DfcmqX5iRcw/",
-   "views": 1311,
-   "reach": 1154,
+   "views": 1316,
+   "reach": 1158,
    "likes": 19,
    "comments": 1,
-   "saved": 7,
+   "saved": 8,
    "shares": 1,
-   "ig_reels_avg_watch_time": 9486,
-   "reels_skip_rate": 39.7
+   "ig_reels_avg_watch_time": 9496,
+   "reels_skip_rate": 39.6
   },
   {
    "id": "17952667365338103",
@@ -859,13 +882,13 @@
    "folder": "TT02_face_wash_frequency",
    "first_line": "does washing your face more help acne?",
    "permalink": "https://www.instagram.com/reel/DfVbgkdjnjd/",
-   "views": 16211,
-   "reach": 14055,
-   "likes": 309,
+   "views": 16248,
+   "reach": 14088,
+   "likes": 310,
    "comments": 14,
-   "saved": 133,
+   "saved": 134,
    "shares": 63,
-   "ig_reels_avg_watch_time": 12587,
+   "ig_reels_avg_watch_time": 12580,
    "reels_skip_rate": 29.6
   },
   {
@@ -875,13 +898,13 @@
    "folder": "CR11_spf_moisturizer",
    "first_line": "does the SPF in your moisturizer count?",
    "permalink": "https://www.instagram.com/reel/DfUz-DomFh4/",
-   "views": 1356,
-   "reach": 1126,
+   "views": 1358,
+   "reach": 1128,
    "likes": 21,
    "comments": 1,
    "saved": 3,
    "shares": 0,
-   "ig_reels_avg_watch_time": 9538,
+   "ig_reels_avg_watch_time": 9549,
    "reels_skip_rate": 47.1
   },
   {
@@ -891,8 +914,8 @@
    "folder": "C31_mark_or_scar",
    "first_line": "Is it an acne scar or just a mark?",
    "permalink": "https://www.instagram.com/p/DfStd0qmzkv/",
-   "views": 46,
-   "reach": 38,
+   "views": 58,
+   "reach": 46,
    "likes": 1,
    "comments": 1,
    "saved": 0,
@@ -907,14 +930,14 @@
    "folder": "TT01_shaving_bumps",
    "first_line": "those red bumps after shaving aren't pimples",
    "permalink": "https://www.instagram.com/reel/DfSHsHMDxt_/",
-   "views": 1402,
+   "views": 1407,
    "reach": 1238,
    "likes": 6,
    "comments": 1,
    "saved": 1,
    "shares": 0,
-   "ig_reels_avg_watch_time": 8300,
-   "reels_skip_rate": 31.9
+   "ig_reels_avg_watch_time": 8290,
+   "reels_skip_rate": 32.1
   },
   {
    "id": "18118918142587571",
@@ -923,9 +946,9 @@
    "folder": "C30_between_seasons",
    "first_line": "Why does my skin get dry and irritated when the seasons change?",
    "permalink": "https://www.instagram.com/p/DfKu4CEIVSZ/",
-   "views": 59,
-   "reach": 29,
-   "likes": 2,
+   "views": 70,
+   "reach": 36,
+   "likes": 3,
    "comments": 1,
    "saved": 0,
    "shares": 0,
@@ -939,13 +962,13 @@
    "folder": "CR10_sunscreen_missed_spot",
    "first_line": "which spot does your sunscreen miss?",
    "permalink": "https://www.instagram.com/reel/DfKi_hylUkK/",
-   "views": 1455,
+   "views": 1457,
    "reach": 1290,
    "likes": 22,
    "comments": 1,
    "saved": 5,
    "shares": 2,
-   "ig_reels_avg_watch_time": 11084,
+   "ig_reels_avg_watch_time": 11089,
    "reels_skip_rate": 23.5
   },
   {
@@ -955,13 +978,13 @@
    "folder": "CR09_pimple_patch",
    "first_line": "does a pimple patch work on every spot?",
    "permalink": "https://www.instagram.com/reel/DfCwKL_n1Y9/",
-   "views": 1449,
-   "reach": 1229,
+   "views": 1451,
+   "reach": 1231,
    "likes": 11,
    "comments": 1,
    "saved": 3,
    "shares": 1,
-   "ig_reels_avg_watch_time": 12599,
+   "ig_reels_avg_watch_time": 12596,
    "reels_skip_rate": 33.1
   },
   {
@@ -971,8 +994,8 @@
    "folder": "C29_visible_light",
    "first_line": "Why do dark patches keep coming back even when I wear sunscreen?",
    "permalink": "https://www.instagram.com/p/DfAiIaVoF4q/",
-   "views": 58,
-   "reach": 26,
+   "views": 67,
+   "reach": 32,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -987,8 +1010,8 @@
    "folder": "S08_nose_dots",
    "first_line": "are the dots on my nose blackheads or sebaceous filaments?",
    "permalink": "https://www.instagram.com/p/De-BnToGUTN/",
-   "views": 53,
-   "reach": 37,
+   "views": 61,
+   "reach": 45,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1003,14 +1026,14 @@
    "folder": "CR08_glass_skin_type",
    "first_line": "is glass skin right for my skin type?",
    "permalink": "https://www.instagram.com/reel/De4nTcuADVt/",
-   "views": 193,
-   "reach": 176,
+   "views": 196,
+   "reach": 179,
    "likes": 3,
    "comments": 1,
    "saved": 2,
    "shares": 0,
-   "ig_reels_avg_watch_time": 5117,
-   "reels_skip_rate": 74
+   "ig_reels_avg_watch_time": 5182,
+   "reels_skip_rate": 73.3
   },
   {
    "id": "18135342022662503",
@@ -1019,8 +1042,8 @@
    "folder": "C28_dark_circles",
    "first_line": "What kind of dark circles do I have?",
    "permalink": "https://www.instagram.com/p/De4lmfnEVoa/",
-   "views": 60,
-   "reach": 29,
+   "views": 70,
+   "reach": 34,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1035,8 +1058,8 @@
    "folder": "S07_hypochlorous_mist",
    "first_line": "is hypochlorous acid spray good for your skin?",
    "permalink": "https://www.instagram.com/p/DexA6n8GC-w/",
-   "views": 46,
-   "reach": 20,
+   "views": 54,
+   "reach": 25,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1051,14 +1074,14 @@
    "folder": "CR07_nose_dots",
    "first_line": "are the dots on my nose blackheads?",
    "permalink": "https://www.instagram.com/reel/DewzJATEd8i/",
-   "views": 1631,
+   "views": 1632,
    "reach": 1360,
    "likes": 19,
    "comments": 1,
    "saved": 0,
    "shares": 3,
-   "ig_reels_avg_watch_time": 10539,
-   "reels_skip_rate": 32
+   "ig_reels_avg_watch_time": 10547,
+   "reels_skip_rate": 31.9
   },
   {
    "id": "18097293887390395",
@@ -1067,14 +1090,14 @@
    "folder": "",
    "first_line": "Laser hair removal can make facial hair grow MORE? Yes—it's a rare but",
    "permalink": "https://www.instagram.com/reel/DewCw58iTT_/",
-   "views": 174,
-   "reach": 151,
+   "views": 175,
+   "reach": 152,
    "likes": 2,
    "comments": 1,
    "saved": 2,
    "shares": 0,
-   "ig_reels_avg_watch_time": 11123,
-   "reels_skip_rate": 61.4
+   "ig_reels_avg_watch_time": 11117,
+   "reels_skip_rate": 61
   },
   {
    "id": "17962024916999301",
@@ -1083,8 +1106,8 @@
    "folder": "C27_off_season",
    "first_line": "When do Koreans not book a treatment?",
    "permalink": "https://www.instagram.com/p/DeubhS4j1Oq/",
-   "views": 39,
-   "reach": 20,
+   "views": 47,
+   "reach": 25,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1099,8 +1122,8 @@
    "folder": "S06_pimple_patches",
    "first_line": "do pimple patches actually work?",
    "permalink": "https://www.instagram.com/p/Der_7BaHblG/",
-   "views": 93,
-   "reach": 39,
+   "views": 99,
+   "reach": 43,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1115,8 +1138,8 @@
    "folder": "C26_frequency",
    "first_line": "What do Koreans actually do for their skin every day?",
    "permalink": "https://www.instagram.com/p/DemiqnSFmv9/",
-   "views": 63,
-   "reach": 23,
+   "views": 64,
+   "reach": 24,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1131,13 +1154,13 @@
    "folder": "CR06_selfie_distance",
    "first_line": "why does my nose look bigger in selfies?",
    "permalink": "https://www.instagram.com/reel/Demh0nyj7s2/",
-   "views": 1644,
+   "views": 1645,
    "reach": 1378,
    "likes": 9,
    "comments": 1,
    "saved": 4,
    "shares": 4,
-   "ig_reels_avg_watch_time": 7870,
+   "ig_reels_avg_watch_time": 7869,
    "reels_skip_rate": 36.5
   },
   {
@@ -1147,8 +1170,8 @@
    "folder": "S05_purge_or_breakout",
    "first_line": "is my skin purging or breaking out?",
    "permalink": "https://www.instagram.com/p/Dee-6KLmunp/",
-   "views": 96,
-   "reach": 42,
+   "views": 97,
+   "reach": 44,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1163,13 +1186,13 @@
    "folder": "CR05_half_sunscreen",
    "first_line": "how much sunscreen should you put on your face?",
    "permalink": "https://www.instagram.com/reel/DeetRhZiEF8/",
-   "views": 3783,
-   "reach": 3063,
+   "views": 3786,
+   "reach": 3067,
    "likes": 18,
    "comments": 1,
    "saved": 5,
    "shares": 2,
-   "ig_reels_avg_watch_time": 11492,
+   "ig_reels_avg_watch_time": 11489,
    "reels_skip_rate": 26.3
   },
   {
@@ -1179,8 +1202,8 @@
    "folder": "",
    "first_line": "Planning skin treatment in Korea? Start here.",
    "permalink": "https://www.instagram.com/p/Ded1121ElpR/",
-   "views": 49,
-   "reach": 13,
+   "views": 51,
+   "reach": 15,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1195,8 +1218,8 @@
    "folder": "C23_how_to_prepare",
    "first_line": "How do I prepare my skin before a treatment?",
    "permalink": "https://www.instagram.com/p/Decm0WxD87N/",
-   "views": 45,
-   "reach": 19,
+   "views": 48,
+   "reach": 21,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1211,8 +1234,8 @@
    "folder": "S04_newest_sunscreen_filter",
    "first_line": "what is bemotrizinol, the new sunscreen ingredient in the us?",
    "permalink": "https://www.instagram.com/p/DeaO1GzFdzM/",
-   "views": 65,
-   "reach": 40,
+   "views": 67,
+   "reach": 42,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1227,8 +1250,8 @@
    "folder": "C22_pregnancy",
    "first_line": "Can I still have this while pregnant?",
    "permalink": "https://www.instagram.com/p/DeU2lbAmt0g/",
-   "views": 122,
-   "reach": 40,
+   "views": 125,
+   "reach": 42,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1243,14 +1266,14 @@
    "folder": "CR03_visible_light",
    "first_line": "does sunscreen block visible light?",
    "permalink": "https://www.instagram.com/reel/DeU10yFEUh3/",
-   "views": 2287,
-   "reach": 1830,
+   "views": 2289,
+   "reach": 1833,
    "likes": 12,
    "comments": 4,
    "saved": 11,
    "shares": 1,
-   "ig_reels_avg_watch_time": 9423,
-   "reels_skip_rate": 42.7
+   "ig_reels_avg_watch_time": 9417,
+   "reels_skip_rate": 42.8
   },
   {
    "id": "18130748494685085",
@@ -1275,8 +1298,8 @@
    "folder": "S03_photograph_or_skin",
    "first_line": "Glass skin is the English name that travelled. The Korean word it came",
    "permalink": "https://www.instagram.com/p/DeNRr5Hj_fn/",
-   "views": 93,
-   "reach": 42,
+   "views": 95,
+   "reach": 44,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1307,8 +1330,8 @@
    "folder": "C25_waiting_room",
    "first_line": "What can you tell about a clinic before anyone speaks to you?",
    "permalink": "https://www.instagram.com/p/DeKqYuCmokT/",
-   "views": 59,
-   "reach": 16,
+   "views": 60,
+   "reach": 17,
    "likes": 4,
    "comments": 1,
    "saved": 0,
@@ -1323,8 +1346,8 @@
    "folder": "S01_wait_or_calendar",
    "first_line": "When a clinic tells you to wait, it can mean two very different things",
    "permalink": "https://www.instagram.com/p/DeIRFKeGGHu/",
-   "views": 102,
-   "reach": 56,
+   "views": 103,
+   "reach": 57,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1355,8 +1378,8 @@
    "folder": "C21_mens_skin",
    "first_line": "Is men's skin actually different?",
    "permalink": "https://www.instagram.com/p/DeFUsVqj89k/",
-   "views": 125,
-   "reach": 42,
+   "views": 126,
+   "reach": 43,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1371,8 +1394,8 @@
    "folder": "C20_no_downtime",
    "first_line": "Is there really no downtime?",
    "permalink": "https://www.instagram.com/p/DeCv6KrlP2U/",
-   "views": 99,
-   "reach": 41,
+   "views": 100,
+   "reach": 42,
    "likes": 3,
    "comments": 1,
    "saved": 0,
@@ -1387,8 +1410,8 @@
    "folder": "C24_korean_words",
    "first_line": "What does \"glass skin\" actually mean in Korean?",
    "permalink": "https://www.instagram.com/p/Dd9yiiKASlC/",
-   "views": 66,
-   "reach": 42,
+   "views": 67,
+   "reach": 43,
    "likes": 2,
    "comments": 1,
    "saved": 1,
@@ -1403,8 +1426,8 @@
    "folder": "S02_half_the_sunscreen",
    "first_line": "SPF is measured with 2 mg of sunscreen on every square centimetre of s",
    "permalink": "https://www.instagram.com/p/Dd7M_WCHa74/",
-   "views": 162,
-   "reach": 58,
+   "views": 163,
+   "reach": 59,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1419,8 +1442,8 @@
    "folder": "C19_change_or_maintain",
    "first_line": "Which skincare actually changes skin, and which only maintains it?",
    "permalink": "https://www.instagram.com/p/Dd4mmOriT2d/",
-   "views": 101,
-   "reach": 26,
+   "views": 102,
+   "reach": 27,
    "likes": 2,
    "comments": 1,
    "saved": 1,
@@ -1451,8 +1474,8 @@
    "folder": "C18_one_question",
    "first_line": "What should I ask before agreeing to a cosmetic procedure?",
    "permalink": "https://www.instagram.com/p/DdzWsVzlN4r/",
-   "views": 106,
-   "reach": 45,
+   "views": 107,
+   "reach": 46,
    "likes": 2,
    "comments": 1,
    "saved": 1,
@@ -1467,8 +1490,8 @@
    "folder": "C17_after_you_fly_home",
    "first_line": "What happens if something changes after you fly home?",
    "permalink": "https://www.instagram.com/p/Ddwt_qwGdDw/",
-   "views": 104,
-   "reach": 61,
+   "views": 106,
+   "reach": 63,
    "likes": 2,
    "comments": 1,
    "saved": 1,
@@ -1483,8 +1506,8 @@
    "folder": "C16_your_40s",
    "first_line": "Why did my skin change in my 40s?",
    "permalink": "https://www.instagram.com/p/DdrpsO-j5Jx/",
-   "views": 134,
-   "reach": 86,
+   "views": 137,
+   "reach": 89,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1515,8 +1538,8 @@
    "folder": "C15_what_you_forget",
    "first_line": "What should you tell a clinic before a treatment, even if it seems unr",
    "permalink": "https://www.instagram.com/p/Ddmeg67D6VD/",
-   "views": 146,
-   "reach": 61,
+   "views": 149,
+   "reach": 64,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1531,8 +1554,8 @@
    "folder": "C14_when_to_judge",
    "first_line": "How long before you can tell whether a treatment worked?",
    "permalink": "https://www.instagram.com/p/DdhOCjLoERd/",
-   "views": 130,
-   "reach": 76,
+   "views": 132,
+   "reach": 78,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1547,8 +1570,8 @@
    "folder": "C13_your_own_photos",
    "first_line": "How do you take a before-and-after photo you can actually trust?",
    "permalink": "https://www.instagram.com/p/DdeoowHmusi/",
-   "views": 126,
-   "reach": 71,
+   "views": 128,
+   "reach": 73,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1579,8 +1602,8 @@
    "folder": "C12_skin_type_risk",
    "first_line": "Is laser safe for darker skin?",
    "permalink": "https://www.instagram.com/p/DdZms0_m4xI/",
-   "views": 110,
-   "reach": 62,
+   "views": 112,
+   "reach": 64,
    "likes": 2,
    "comments": 1,
    "saved": 0,
@@ -1611,8 +1634,8 @@
    "folder": "C11_when_you_stop",
    "first_line": "What happens if you stop getting treatments?",
    "permalink": "https://www.instagram.com/p/DdUc3GSj-iD/",
-   "views": 158,
-   "reach": 51,
+   "views": 161,
+   "reach": 53,
    "likes": 3,
    "comments": 1,
    "saved": 0,
@@ -1627,14 +1650,14 @@
    "folder": "",
    "first_line": "Does sunscreen actually prevent ageing?",
    "permalink": "https://www.instagram.com/reel/DdRiOBtkt66/",
-   "views": 190,
-   "reach": 158,
+   "views": 191,
+   "reach": 159,
    "likes": 2,
    "comments": 2,
    "saved": 0,
    "shares": 1,
-   "ig_reels_avg_watch_time": 6307,
-   "reels_skip_rate": 55.3
+   "ig_reels_avg_watch_time": 6278,
+   "reels_skip_rate": 55.6
   },
   {
    "id": "17962814799186119",
@@ -1643,8 +1666,8 @@
    "folder": "C10_daily_protection",
    "first_line": "What does sunscreen actually do for ageing, and is it worth the fuss?",
    "permalink": "https://www.instagram.com/p/DdPM2RBoM_k/",
-   "views": 145,
-   "reach": 47,
+   "views": 147,
+   "reach": 49,
    "likes": 80,
    "comments": 1,
    "saved": 0,
@@ -1659,8 +1682,8 @@
    "folder": "C08_same_age_different_plan",
    "first_line": "What are the best aesthetic treatments for your 30s? Age alone cannot ",
    "permalink": "https://www.instagram.com/p/DdMk6kjnBmJ/",
-   "views": 107,
-   "reach": 46,
+   "views": 109,
+   "reach": 48,
    "likes": 31,
    "comments": 3,
    "saved": 0,
@@ -1675,9 +1698,9 @@
    "folder": "C06_glass_skin",
    "first_line": "What does ‘glass skin’ actually mean? It is a visual beauty ideal—not ",
    "permalink": "https://www.instagram.com/p/DdHhHPRj_2k/",
-   "views": 605,
-   "reach": 551,
-   "likes": 94,
+   "views": 607,
+   "reach": 555,
+   "likes": 93,
    "comments": 1,
    "saved": 0,
    "shares": 0,
@@ -1691,8 +1714,8 @@
    "folder": "C07_celebrity_reference",
    "first_line": "Can you bring a celebrity photo to an aesthetic consultation? Yes. A r",
    "permalink": "https://www.instagram.com/p/DdCZZZOGQpW/",
-   "views": 1029,
-   "reach": 1161,
+   "views": 1030,
+   "reach": 1162,
    "likes": 72,
    "comments": 1,
    "saved": 11,
@@ -1707,8 +1730,8 @@
    "folder": "C05_filter_face",
    "first_line": "Should you bring a filtered selfie to an aesthetic consultation? Yes—i",
    "permalink": "https://www.instagram.com/p/Dc6iAYMlpl7/",
-   "views": 672,
-   "reach": 759,
+   "views": 673,
+   "reach": 760,
    "likes": 62,
    "comments": 1,
    "saved": 1,
@@ -1723,8 +1746,8 @@
    "folder": "C09_when_not_to",
    "first_line": "When should a doctor tell you not to get a treatment?",
    "permalink": "https://www.instagram.com/p/Dc5FNkpDgfQ/",
-   "views": 142,
-   "reach": 40,
+   "views": 143,
+   "reach": 41,
    "likes": 52,
    "comments": 10,
    "saved": 0,
@@ -1739,8 +1762,8 @@
    "folder": "C04_face_massage",
    "first_line": "Does gua sha or facial massage really lift your face?",
    "permalink": "https://www.instagram.com/p/Dc2o8USlsuh/",
-   "views": 45,
-   "reach": 16,
+   "views": 46,
+   "reach": 17,
    "likes": 26,
    "comments": 1,
    "saved": 0,
@@ -1755,8 +1778,8 @@
    "folder": "",
    "first_line": "Do pores actually open and close? No—pores are normal openings in the ",
    "permalink": "https://www.instagram.com/p/DcyO5xnEur6/",
-   "views": 94,
-   "reach": 42,
+   "views": 95,
+   "reach": 43,
    "likes": 45,
    "comments": 1,
    "saved": 0,
@@ -1771,8 +1794,8 @@
    "folder": "",
    "first_line": "How can you tell whether aesthetic before-and-after photos are accurat",
    "permalink": "https://www.instagram.com/p/DcoJu1vkpje/",
-   "views": 182,
-   "reach": 107,
+   "views": 184,
+   "reach": 108,
    "likes": 21,
    "comments": 1,
    "saved": 0,
@@ -1787,8 +1810,8 @@
    "folder": "",
    "first_line": "Why does your nose look bigger in selfies?",
    "permalink": "https://www.instagram.com/p/Dci1sn2EoIE/",
-   "views": 1295,
-   "reach": 1148,
+   "views": 1296,
+   "reach": 1150,
    "likes": 54,
    "comments": 1,
    "saved": 0,
@@ -1803,9 +1826,9 @@
    "folder": "",
    "first_line": "“Treatment done! So… jjimjilbang, BBQ and soju tonight?”",
    "permalink": "https://www.instagram.com/p/DcbHumcDxkq/",
-   "views": 267,
-   "reach": 164,
-   "likes": 54,
+   "views": 268,
+   "reach": 165,
+   "likes": 53,
    "comments": 1,
    "saved": 0,
    "shares": 0,
@@ -1819,9 +1842,9 @@
    "folder": "",
    "first_line": "“They put something on my face after. I never asked what it was.”",
    "permalink": "https://www.instagram.com/p/DcTgKD5Dnsm/",
-   "views": 587,
-   "reach": 555,
-   "likes": 219,
+   "views": 588,
+   "reach": 556,
+   "likes": 215,
    "comments": 5,
    "saved": 0,
    "shares": 0,
@@ -1835,8 +1858,8 @@
    "folder": "",
    "first_line": "“I’m in Seoul for five days. Can I just do everything?”",
    "permalink": "https://www.instagram.com/p/DcOWmIrjwvD/",
-   "views": 120,
-   "reach": 92,
+   "views": 121,
+   "reach": 93,
    "likes": 33,
    "comments": 1,
    "saved": 0,
@@ -1853,7 +1876,7 @@
    "permalink": "https://www.instagram.com/p/DcI4aZfiSEI/",
    "views": 180,
    "reach": 147,
-   "likes": 70,
+   "likes": 68,
    "comments": 1,
    "saved": 1,
    "shares": 1,
@@ -1869,7 +1892,7 @@
    "permalink": "https://www.instagram.com/p/DcDyxy9DENE/",
    "views": 178,
    "reach": 137,
-   "likes": 47,
+   "likes": 46,
    "comments": 1,
    "saved": 1,
    "shares": 1,
@@ -1885,7 +1908,7 @@
    "permalink": "https://www.instagram.com/p/Db-sC3CicHR/",
    "views": 284,
    "reach": 233,
-   "likes": 107,
+   "likes": 102,
    "comments": 1,
    "saved": 1,
    "shares": 0,
@@ -1901,7 +1924,7 @@
    "permalink": "https://www.instagram.com/p/Db5ie_MFNdE/",
    "views": 132,
    "reach": 111,
-   "likes": 45,
+   "likes": 43,
    "comments": 2,
    "saved": 1,
    "shares": 1,
@@ -1917,7 +1940,7 @@
    "permalink": "https://www.instagram.com/p/Dbvg4iZki4x/",
    "views": 275,
    "reach": 242,
-   "likes": 50,
+   "likes": 49,
    "comments": 2,
    "saved": 1,
    "shares": 129,
@@ -1931,9 +1954,9 @@
    "folder": "",
    "first_line": "“I spent a lot on lifting, but I don’t really see much difference.”",
    "permalink": "https://www.instagram.com/p/Dbao9a4ASq1/",
-   "views": 171,
+   "views": 172,
    "reach": 87,
-   "likes": 39,
+   "likes": 38,
    "comments": 1,
    "saved": 0,
    "shares": 14,
