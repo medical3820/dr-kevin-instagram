@@ -44,3 +44,17 @@ CR25_soap_vs_sanitizer
 TR24_silicone_scar_gel
 CR19_skin_injections_glow
 TR26_flushing_vs_rosacea
+CR27_glutathione_cream
+TR34_oy_korea_top5
+CR28_niacinamide_percent
+TR35_korea_tax_refund
+CR29_barrier_repair_time
+TR36_oy_korea_sunscreen_top5
+CR30_winter_flaky_face
+TR37_pa_rating
+CR31_retinol_push_or_stop
+TR38_flight_dry_skin
+CR32_sugar_acne
+TR39_carry_on_haul
+CR33_milk_acne
+TR40_us_vs_korea_filters
