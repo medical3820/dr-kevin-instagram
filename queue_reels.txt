@@ -36,3 +36,11 @@ OY_tourist_top5
 OY_global_top10
 OY_mask_top3
 OY_mask_top3_v2
+CR20_chocolate_acne
+CR21_one_bad_night
+TR23_hand_moisturizer
+CR22_car_side_window
+CR25_soap_vs_sanitizer
+TR24_silicone_scar_gel
+CR19_skin_injections_glow
+TR26_flushing_vs_rosacea
