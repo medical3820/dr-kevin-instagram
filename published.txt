@@ -69,3 +69,4 @@ CR16_melasma_or_sunspot  media_id=18446632189182406  comment=ok  2026-11-21T18:1
 C36_salicylic_acid_evidence  media_id=18137203999740468  comment=ok  2026-11-21T20:10:31Z
 CR14_ice_water_pores  media_id=17880362214574012  comment=ok  2026-11-22T18:30:29Z
 CR15_sleep_wrinkles  media_id=18115035121886245  comment=ok  2026-11-23T19:29:47Z
+CR20_chocolate_acne  media_id=17916188061586433  comment=ok  2026-11-25T18:51:53Z
