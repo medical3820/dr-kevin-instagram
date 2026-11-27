@@ -72,3 +72,4 @@ CR15_sleep_wrinkles  media_id=18115035121886245  comment=ok  2026-11-23T19:29:47
 CR20_chocolate_acne  media_id=17916188061586433  comment=ok  2026-11-25T18:51:53Z
 CR21_one_bad_night  media_id=17912597574596106  comment=ok  2026-11-26T20:10:41Z
 TR23_hand_moisturizer  media_id=18137453350708841  comment=ok  2026-11-27T02:50:46Z
+CR22_car_side_window  media_id=17947504530375679  comment=ok  2026-11-27T21:13:00Z
