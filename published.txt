@@ -71,3 +71,4 @@ CR14_ice_water_pores  media_id=17880362214574012  comment=ok  2026-11-22T18:30:2
 CR15_sleep_wrinkles  media_id=18115035121886245  comment=ok  2026-11-23T19:29:47Z
 CR20_chocolate_acne  media_id=17916188061586433  comment=ok  2026-11-25T18:51:53Z
 CR21_one_bad_night  media_id=17912597574596106  comment=ok  2026-11-26T20:10:41Z
+TR23_hand_moisturizer  media_id=18137453350708841  comment=ok  2026-11-27T02:50:46Z
