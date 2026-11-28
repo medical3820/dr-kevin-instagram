@@ -1,27 +1,27 @@
-# 계정 인사이트 (API, 2026-11-23T09:48Z)
+# 계정 인사이트 (API, 2026-11-28T02:15Z)
 
-팔로워 1508 · 팔로잉 5 · 게시물 57
+팔로워 1472 · 팔로잉 5 · 게시물 59
 
 ## 계정 합계
 
 | 지표 | 최근 14일 | 그 전 14일 |
 |---|---|---|
-| reach | 12073 | 20029 |
-| views | 16682 | 23693 |
-| accounts_engaged | 390 | 601 |
-| total_interactions | 587 | 730 |
+| reach | 9218 | 23270 |
+| views | 13111 | 28104 |
+| accounts_engaged | 306 | 679 |
+| total_interactions | 462 | 858 |
 | profile_links_taps | 0 | 0 |
-| follows_and_unfollows | {"total": null, "by": {"FOLLOWER": 181, "NON_FOLLOWER": 193}} | {"total": null, "by": {"FOLLOWER": 60, "NON_FOLLOWER": 219}} |
-| saves | 158 | 152 |
-| shares | 54 | 67 |
+| follows_and_unfollows | {"total": null, "by": {"FOLLOWER": 175, "NON_FOLLOWER": 147}} | {"total": null, "by": {"FOLLOWER": 41, "NON_FOLLOWER": 227}} |
+| saves | 127 | 183 |
+| shares | 42 | 78 |
 
 ## 일별 새 팔로우(최근 30일, 집계 끝 시각 UTC — 보통 07시 = 미 서부 자정, 마지막 1~2일은 집계 지연)
 
-10-26T07:2 10-27T07:8 10-28T07:14 10-29T07:9 10-30T07:0 10-31T07:2 11-01T07:4 11-02T08:2 11-03T08:1 11-04T08:7 11-05T08:5 11-06T08:1 11-07T08:1 11-08T08:3 11-09T08:3 11-10T08:5 11-11T08:4 11-12T08:3 11-13T08:0 11-14T08:25 11-15T08:25 11-16T08:23 11-17T08:30 11-18T08:24 11-19T08:21 11-20T08:17 11-21T08:4 11-22T08:0 11-23T08:0
+10-30T07:0 10-31T07:2 11-01T07:4 11-02T08:2 11-03T08:1 11-04T08:7 11-05T08:5 11-06T08:1 11-07T08:1 11-08T08:3 11-09T08:3 11-10T08:5 11-11T08:4 11-12T08:3 11-13T08:0 11-14T08:25 11-15T08:25 11-16T08:23 11-17T08:30 11-18T08:24 11-19T08:21 11-20T08:17 11-21T08:4 11-22T08:1 11-23T08:2 11-24T08:2 11-25T08:0 11-26T08:1 11-27T08:0
 
 ## 팔로워 구성 (상위)
-- country: IN 39%, KR 20%, US 11%, TW 6%, BD 5%, ID 3%, PK 1%, PH 1%
-- age: 25-34 35%, 18-24 30%, 35-44 17%, 45-54 7%, 13-17 7%, 55-64 3%, 65+ 1%
+- country: IN 38%, KR 20%, US 11%, TW 6%, BD 5%, ID 3%, PH 1%, PK 1%
+- age: 25-34 35%, 18-24 29%, 35-44 17%, 45-54 7%, 13-17 7%, 55-64 3%, 65+ 1%
 - gender: U 65%, M 21%, F 15%
 - 참여한 사람 country: US 29%, IN 23%, PH 15%, MY 3%, CA 3%, AU 2%, HK 2%, ID 2%
 - 참여한 사람 age: 18-24 29%, 13-17 29%, 25-34 26%, 35-44 8%, 45-54 5%, 55-64 2%, 65+ 1%
@@ -30,37 +30,40 @@
 
 | 날짜 | 형식 | 게시물 | 조회 | 도달 | 저장 | 공유 | 좋아요 | 팔로우 | 프로필 방문 | 3초 건너뛰기 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-22 | R | CR14_ice_water_pores | 1439 | 1208 | 1 | 0 | 5 | — | — | 37.2% |
-| 2026-11-21 | C | C36_salicylic_acid_evidence | 15 | 7 | 0 | 0 | 0 | 0 | 0 | — |
-| 2026-11-21 | R | CR16_melasma_or_sunspot | 1285 | 1147 | 3 | 2 | 8 | — | — | 38.3% |
-| 2026-11-18 | R | OY_mask_top3 | 147 | 128 | 0 | 0 | 3 | — | — | 62.3% |
-| 2026-11-17 | C | C35_sunscreen_amount | 55 | 26 | 0 | 0 | 1 | 0 | 1 | — |
-| 2026-11-16 | R | CR18_melasma_sessions | 276 | 251 | 2 | 0 | 4 | — | — | 66% |
-| 2026-11-14 | R | OY_global_top10 | 1288 | 1154 | 20 | 10 | 23 | — | — | 50.6% |
-| 2026-11-14 | C | C34_hypochlorous_mist | 77 | 41 | 0 | 0 | 2 | 0 | 0 | — |
-| 2026-11-14 | R | OY_basics_part1 | 914 | 749 | 12 | 4 | 15 | — | — | 54.7% |
-| 2026-11-12 | R | TT04_whey_protein | 1162 | 1045 | 0 | 1 | 14 | — | — | 42.7% |
-| 2026-11-11 | R | CR13_vitamin_c_color | 1298 | 1093 | 11 | 7 | 20 | — | — | 45.8% |
-| 2026-11-10 | R | TT05_hot_water_wash | 1228 | 1075 | 2 | 0 | 9 | — | — | 32.6% |
-| 2026-11-10 | C | C33_pimple_patch | 73 | 46 | 0 | 0 | 3 | 0 | 1 | — |
+| 2026-11-27 | R | CR22_car_side_window | 64 | 57 | 0 | 0 | 0 | — | — | 61.4% |
+| 2026-11-27 | R | TR23_hand_moisturizer | 145 | 133 | 0 | 0 | 0 | — | — | 67.9% |
+| 2026-11-26 | R | CR21_one_bad_night | 169 | 141 | 1 | 0 | 1 | — | — | 67.8% |
+| 2026-11-25 | R | CR20_chocolate_acne | 610 | 522 | 2 | 0 | 2 | — | — | 68.1% |
+| 2026-11-23 | R | CR15_sleep_wrinkles | 1321 | 1154 | 1 | 0 | 11 | — | — | 36.8% |
+| 2026-11-22 | R | CR14_ice_water_pores | 1451 | 1221 | 1 | 0 | 5 | — | — | 37.3% |
+| 2026-11-21 | C | C36_salicylic_acid_evidence | 18 | 9 | 0 | 0 | 0 | 0 | 0 | — |
+| 2026-11-21 | R | CR16_melasma_or_sunspot | 1292 | 1148 | 3 | 2 | 8 | — | — | 38.4% |
+| 2026-11-17 | C | C35_sunscreen_amount | 56 | 26 | 0 | 0 | 1 | 0 | 1 | — |
+| 2026-11-16 | R | CR18_melasma_sessions | 279 | 253 | 2 | 0 | 4 | — | — | 65.2% |
+| 2026-11-14 | C | C34_hypochlorous_mist | 77 | 44 | 0 | 0 | 2 | 0 | 0 | — |
+| 2026-11-14 | R | OY_basics_part1 | 916 | 749 | 11 | 4 | 15 | — | — | 54.6% |
+| 2026-11-12 | R | TT04_whey_protein | 1164 | 1046 | 0 | 1 | 14 | — | — | 42.8% |
+| 2026-11-11 | R | CR13_vitamin_c_color | 1299 | 1095 | 11 | 7 | 20 | — | — | 45.9% |
+| 2026-11-10 | R | TT05_hot_water_wash | 1229 | 1076 | 2 | 0 | 9 | — | — | 32.6% |
+| 2026-11-10 | C | C33_pimple_patch | 73 | 49 | 0 | 0 | 3 | 0 | 1 | — |
 | 2026-11-10 | R | CR17_under_eye_part2 | 1023 | 869 | 3 | 0 | 14 | — | — | 41.9% |
-| 2026-11-09 | R | CR17_under_eye_part1 | 225 | 189 | 1 | 0 | 3 | — | — | 54.1% |
+| 2026-11-09 | R | CR17_under_eye_part1 | 226 | 189 | 1 | 0 | 3 | — | — | 53.8% |
 | 2026-11-07 | C | C32_purge_or_breakout | 59 | 31 | 1 | 0 | 1 | 0 | 1 | — |
 | 2026-11-07 | R | CR12_retinol_pea | 1316 | 1158 | 8 | 1 | 19 | — | — | 39.6% |
-| 2026-11-04 | R | TT02_face_wash_frequency | 16248 | 14088 | 134 | 63 | 310 | — | — | 29.6% |
+| 2026-11-04 | R | TT02_face_wash_frequency | 16252 | 14093 | 134 | 63 | 309 | — | — | 29.6% |
 | 2026-11-04 | R | CR11_spf_moisturizer | 1358 | 1128 | 3 | 0 | 21 | — | — | 47.1% |
-| 2026-11-03 | C | C31_mark_or_scar | 58 | 46 | 0 | 0 | 1 | 0 | 1 | — |
-| 2026-11-03 | R | TT01_shaving_bumps | 1407 | 1238 | 1 | 0 | 6 | — | — | 32.1% |
+| 2026-11-03 | C | C31_mark_or_scar | 58 | 48 | 0 | 0 | 1 | 0 | 1 | — |
+| 2026-11-03 | R | TT01_shaving_bumps | 1409 | 1240 | 1 | 0 | 6 | — | — | 32.2% |
 | 2026-10-31 | C | C30_between_seasons | 70 | 36 | 0 | 0 | 3 | 0 | 1 | — |
-| 2026-10-31 | R | CR10_sunscreen_missed_spot | 1457 | 1290 | 5 | 2 | 22 | — | — | 23.5% |
-| 2026-10-28 | R | CR09_pimple_patch | 1451 | 1231 | 3 | 1 | 11 | — | — | 33.1% |
+| 2026-10-31 | R | CR10_sunscreen_missed_spot | 1457 | 1292 | 5 | 2 | 22 | — | — | 23.5% |
+| 2026-10-28 | R | CR09_pimple_patch | 1453 | 1231 | 3 | 1 | 11 | — | — | 33.1% |
 | 2026-10-27 | C | C29_visible_light | 67 | 32 | 0 | 0 | 2 | 0 | 0 | — |
 | 2026-10-26 | S | S08_nose_dots | 61 | 45 | 0 | 0 | 2 | 0 | 1 | — |
 | 2026-10-24 | R | CR08_glass_skin_type | 196 | 179 | 2 | 0 | 3 | — | — | 73.3% |
 | 2026-10-24 | C | C28_dark_circles | 70 | 34 | 0 | 0 | 2 | 0 | 1 | — |
-| 2026-10-21 | S | S07_hypochlorous_mist | 54 | 25 | 0 | 0 | 2 | 0 | 0 | — |
-| 2026-10-21 | R | CR07_nose_dots | 1632 | 1360 | 0 | 3 | 19 | — | — | 31.9% |
-| 2026-10-21 | R | Laser hair removal can make facial hair  | 175 | 152 | 2 | 0 | 2 | — | — | 61% |
+| 2026-10-21 | S | S07_hypochlorous_mist | 54 | 26 | 0 | 0 | 2 | 0 | 0 | — |
+| 2026-10-21 | R | CR07_nose_dots | 1634 | 1362 | 0 | 3 | 19 | — | — | 31.9% |
+| 2026-10-21 | R | Laser hair removal can make facial hair  | 176 | 152 | 2 | 0 | 2 | — | — | 61.3% |
 | 2026-10-20 | C | C27_off_season | 47 | 25 | 0 | 0 | 2 | 0 | 1 | — |
 | 2026-10-19 | S | S06_pimple_patches | 99 | 43 | 0 | 0 | 2 | 0 | 1 | — |
 | 2026-10-17 | C | C26_frequency | 64 | 24 | 0 | 0 | 2 | 0 | 2 | — |
@@ -95,23 +98,23 @@
 | 2026-09-17 | C | C12_skin_type_risk | 112 | 64 | 0 | 0 | 2 | 0 | 1 | — |
 | 2026-09-16 | R | sunscreen anti ageing - does it actually | 41 | 39 | 0 | 0 | 2 | — | — | 48.5% |
 | 2026-09-15 | C | C11_when_you_stop | 161 | 53 | 0 | 0 | 3 | 0 | 0 | — |
-| 2026-09-14 | R | Does sunscreen actually prevent ageing? | 191 | 159 | 0 | 1 | 2 | — | — | 55.6% |
+| 2026-09-14 | R | Does sunscreen actually prevent ageing? | 192 | 160 | 0 | 1 | 2 | — | — | 55.9% |
 | 2026-09-13 | C | C10_daily_protection | 147 | 49 | 0 | 41 | 80 | 0 | 2 | — |
 | 2026-09-12 | C | C08_same_age_different_plan | 109 | 48 | 0 | 0 | 31 | 0 | 1 | — |
-| 2026-09-10 | C | C06_glass_skin | 607 | 555 | 0 | 0 | 93 | 0 | 0 | — |
+| 2026-09-10 | C | C06_glass_skin | 607 | 555 | 0 | 0 | 91 | 0 | 0 | — |
 | 2026-09-08 | C | C07_celebrity_reference | 1030 | 1162 | 11 | 0 | 72 | 0 | 1 | — |
-| 2026-09-05 | C | C05_filter_face | 673 | 760 | 1 | 1 | 62 | 0 | 0 | — |
+| 2026-09-05 | C | C05_filter_face | 673 | 760 | 1 | 1 | 61 | 0 | 0 | — |
 | 2026-09-05 | C | C09_when_not_to | 143 | 41 | 0 | 1 | 52 | 0 | 1 | — |
-| 2026-09-04 | C | C04_face_massage | 46 | 17 | 0 | 0 | 26 | 0 | 1 | — |
-| 2026-09-02 | C | Do pores actually open and close? No—por | 95 | 43 | 0 | 1 | 45 | 0 | 1 | — |
+| 2026-09-04 | C | C04_face_massage | 46 | 18 | 0 | 0 | 26 | 0 | 1 | — |
+| 2026-09-02 | C | Do pores actually open and close? No—por | 95 | 43 | 0 | 1 | 44 | 0 | 1 | — |
 | 2026-08-29 | C | How can you tell whether aesthetic befor | 184 | 108 | 0 | 61 | 21 | 0 | 0 | — |
-| 2026-08-27 | C | Why does your nose look bigger in selfie | 1296 | 1150 | 0 | 1 | 54 | 0 | 0 | — |
+| 2026-08-27 | C | Why does your nose look bigger in selfie | 1296 | 1150 | 0 | 1 | 53 | 0 | 0 | — |
 | 2026-08-24 | C | “Treatment done! So… jjimjilbang, BBQ an | 268 | 165 | 0 | 0 | 53 | 0 | 0 | — |
-| 2026-08-21 | C | “They put something on my face after. I  | 588 | 556 | 0 | 0 | 215 | 0 | 4 | — |
-| 2026-08-19 | C | “I’m in Seoul for five days. Can I just  | 121 | 93 | 0 | 0 | 33 | 0 | 0 | — |
+| 2026-08-21 | C | “They put something on my face after. I  | 588 | 556 | 0 | 0 | 214 | 0 | 4 | — |
+| 2026-08-19 | C | “I’m in Seoul for five days. Can I just  | 121 | 93 | 0 | 0 | 32 | 0 | 0 | — |
 | 2026-08-17 | C | “Can I get botox to make my cheeks fulle | 180 | 147 | 1 | 1 | 68 | 0 | 0 | — |
 | 2026-08-15 | C | “Which machine is the strongest? I want  | 178 | 137 | 1 | 1 | 46 | 0 | 1 | — |
-| 2026-08-13 | C | “The consult felt rushed… but the price  | 284 | 233 | 1 | 0 | 102 | 0 | 0 | — |
+| 2026-08-13 | C | “The consult felt rushed… but the price  | 284 | 233 | 1 | 0 | 98 | 0 | 0 | — |
 | 2026-08-11 | C | “Just recommend whatever works best.” | 132 | 111 | 1 | 1 | 43 | 0 | 1 | — |
-| 2026-08-07 | C | ”Isn’t a skin booster just a lighter fil | 275 | 242 | 1 | 129 | 49 | 0 | 2 | — |
+| 2026-08-07 | C | ”Isn’t a skin booster just a lighter fil | 275 | 242 | 1 | 129 | 48 | 0 | 2 | — |
 | 2026-07-30 | C | “I spent a lot on lifting, but I don’t r | 172 | 87 | 0 | 14 | 38 | 0 | 1 | — |
