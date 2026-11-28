@@ -58,3 +58,4 @@ CR32_sugar_acne
 TR39_carry_on_haul
 CR33_milk_acne
 TR40_us_vs_korea_filters
+TR41_us_visitors_buy_top10
